@@ -5,19 +5,17 @@
     <meta charset="utf-8">
     <title>BodyLine Cortona</title>
     <!-- Stylesheets -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body class="hidden-bar-wrapper">
@@ -40,12 +38,12 @@
 
                     <!-- Logo Box -->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img src="{{asset('images/logo.svg')}}" alt="" title=""></a></div>
                     </div>
 
                     <!-- Logo -->
                     <div class="mobile-logo pull-left">
-                        <a href="index.html" title=""><img src="images/logo-small.svg" alt="" title=""></a>
+                        <a href="index.html" title=""><img src="{{asset('images/logo-small.svg')}}" alt="" title=""></a>
                     </div>
 
                     <!-- Header Social Box -->
@@ -68,7 +66,7 @@
 
                     <div class="nav-outer clearfix">
                         <!--Mobile Navigation Toggler-->
-                        <div class="mobile-nav-toggler"><span class="icon"><img src="images/icons/burger.svg" alt="" /></span></div>
+                        <div class="mobile-nav-toggler"><span class="icon"><img src="{{asset('images/icons/burger.svg')}}" alt="" /></span></div>
                         <!-- Main Menu -->
                         <nav class="main-menu navbar-expand-md">
                             <div class="navbar-header">
@@ -134,7 +132,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="images/logo-small.svg" alt="" title=""></a>
+                    <a href="index.html" title=""><img src="{{asset('images/logo-small.svg')}}" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -153,7 +151,7 @@
             <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/sidebar-logo.svg" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="{{asset('images/sidebar-logo.svg')}}" alt="" title=""></a></div>
                 <div class="menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
@@ -220,7 +218,7 @@
         <div class="main-slider-carousel owl-carousel owl-theme">
 
             <div class="slide">
-                <div class="image-layer" style="background-image:url(images/main-slider/image-1.jpg)"></div>
+                <div id="prima" class="image-layer"></div>
                 <div class="auto-container">
                     <!-- Content Boxed -->
                     <div class="content-boxed">
@@ -237,7 +235,7 @@
             </div>
 
             <div class="slide">
-                <div class="image-layer" style="background-image:url(images/main-slider/image-3.jpg)"></div>
+                <div id="seconda" class="image-layer"></div>
                 <div class="auto-container">
                     <!-- Content Boxed -->
                     <div class="content-boxed">
@@ -254,7 +252,7 @@
             </div>
 
             <div class="slide">
-                <div class="image-layer" style="background-image:url(images/main-slider/image-4.jpg)"></div>
+                <div id="terza" class="image-layer"></div>
                 <div class="auto-container">
                     <!-- Content Boxed -->
                     <div class="content-boxed">
@@ -291,7 +289,7 @@
 
         <!--Scroll Dwwn Btn-->
         <div class="mouse-btn-down scroll-to-target" data-target=".testimonial-section">
-            <span class="icon"><img src="images/icons/scroll.png" alt="" /></span>
+            <span class="icon"><img src="{{asset('images/icons/scroll.png')}}" alt="" /></span>
         </div>
 
     </section>
@@ -326,7 +324,7 @@
                     <div class="inner-box">
                         <div class="image">
                             <a href="body-builder.html" class="overlay-link"></a>
-                            <img src="images/resource/service-1.jpg" alt="" />
+                            <img src="{{asset('images/resource/service-1.jpg')}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
@@ -344,7 +342,7 @@
                     <div class="inner-box">
                         <div class="image">
                             <a href="body-builder.html" class="overlay-link"></a>
-                            <img src="images/resource/service-2.jpg" alt="" />
+                            <img src="{{asset('images/resource/service-2.jpg')}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
@@ -362,7 +360,7 @@
                     <div class="inner-box">
                         <div class="image">
                             <a href="body-builder.html" class="overlay-link"></a>
-                            <img src="images/resource/service-3.jpg" alt="" />
+                            <img src="{{asset('images/resource/service-3.jpg')}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
@@ -381,7 +379,7 @@
                     <div class="inner-box">
                         <div class="image">
                             <a href="body-builder.html" class="overlay-link"></a>
-                            <img src="images/resource/service-4.jpg" alt="" />
+                            <img src="{{asset('images/resource/service-4.jpg')}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
@@ -411,9 +409,9 @@
             <!--Video Box-->
             <div class="video-box">
                 <figure class="video-image">
-                    <img src="images/resource/video-img.jpg" alt="">
+                    <img src="{{asset('images/resource/video-img.jpg')}}" alt="">
                 </figure>
-                <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span><img src="images/icons/play-icon.png" alt="" /><i class="ripple"></i></span></a>
+                <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span><img src="{{asset('images/icons/play-icon.png')}}" alt="" /><i class="ripple"></i></span></a>
             </div>
 
             <!-- Button Box -->
@@ -434,7 +432,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/1.jpg" alt="" />
+                            <img src="{{asset('images/gallery/1.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery1.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -452,7 +450,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/2.jpg" alt="" />
+                            <img src="{{asset('images/gallery/2.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery2.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -470,7 +468,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/3.jpg" alt="" />
+                            <img src="{{asset('images/gallery/3.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery3.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -488,7 +486,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/4.jpg" alt="" />
+                            <img src="{{asset('images/gallery/4.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery4.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -506,7 +504,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/5.jpg" alt="" />
+                            <img src="{{asset('images/gallery/5.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery5.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -524,7 +522,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/6.jpg" alt="" />
+                            <img src="{{asset('images/gallery/6.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery6.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -542,7 +540,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/7.jpg" alt="" />
+                            <img src="{{asset('images/gallery/7.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery7.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -560,7 +558,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/8.jpg" alt="" />
+                            <img src="{{asset('images/gallery/8.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery8.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -578,7 +576,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/9.jpg" alt="" />
+                            <img src="{{asset('images/gallery/9.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery9.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -596,7 +594,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/10.jpg" alt="" />
+                            <img src="{{asset('images/gallery/10.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery10.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -614,7 +612,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/11.jpg" alt="" />
+                            <img src="{{asset('images/gallery/11.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery11.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -632,7 +630,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="images/gallery/12.jpg" alt="" />
+                            <img src="{{asset('images/gallery/12.jpg')}}" alt="" />
                             <a class="overlay-link" href="images/gallery/gallery12.jpg" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
@@ -731,7 +729,7 @@
                     <div class="side-text">STANDART</div>
                     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="icon-box">
-                            <span class="icon"><img src="images/icons/price-1-icon.svg" alt="" /></span>
+                            <span class="icon"><img src="{{asset('images/icons/price-1-icon.svg')}}" alt="" /></span>
                         </div>
                         <ul class="price-list">
                             <li class="hide">Membership Card</li>
@@ -751,7 +749,7 @@
                     <div class="side-text">PROFESSIONAL</div>
                     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="icon-box">
-                            <span class="icon"><img src="images/icons/price-2-icon.svg" alt="" /></span>
+                            <span class="icon"><img src="{{asset('images/icons/price-2-icon.svg')}}" alt="" /></span>
                         </div>
                         <ul class="price-list">
                             <li>Membership Card</li>
@@ -771,7 +769,7 @@
                     <div class="side-text">ULTIMATE</div>
                     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="icon-box">
-                            <span class="icon"><img src="images/icons/price-3-icon.svg" alt="" /></span>
+                            <span class="icon"><img src="{{asset('images/icons/price-3-icon.svg')}}" alt="" /></span>
                         </div>
                         <ul class="price-list">
                             <li>Membership Card</li>
@@ -806,7 +804,7 @@
             <div class="coach-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="images/resource/coach-1.jpg" alt="" />
+                        <img src="{{asset('images/resource/coach-1.jpg')}}" alt="" />
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <a href="trainer.html" class="overlay-link"></a>
@@ -838,7 +836,7 @@
             <div class="coach-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="images/resource/coach-2.jpg" alt="" />
+                        <img src="{{asset('images/resource/coach-2.jpg')}}" alt="" />
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <a href="trainer.html" class="overlay-link"></a>
@@ -870,7 +868,7 @@
             <div class="coach-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="images/resource/coach-3.jpg" alt="" />
+                        <img src="{{asset('images/resource/coach-3.jpg')}}" alt="" />
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <a href="trainer.html" class="overlay-link"></a>
@@ -902,7 +900,7 @@
             <div class="coach-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="images/resource/coach-4.jpg" alt="" />
+                        <img src="{{asset('images/resource/coach-4.jpg')}}" alt="" />
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <a href="trainer.html" class="overlay-link"></a>
@@ -934,7 +932,7 @@
             <div class="coach-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="images/resource/coach-1.jpg" alt="" />
+                        <img src="{{asset('images/resource/coach-1.jpg')}}" alt="" />
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <a href="trainer.html" class="overlay-link"></a>
@@ -966,7 +964,7 @@
             <div class="coach-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="images/resource/coach-2.jpg" alt="" />
+                        <img src="{{asset('images/resource/coach-2.jpg')}}" alt="" />
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <a href="trainer.html" class="overlay-link"></a>
@@ -998,7 +996,7 @@
             <div class="coach-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="images/resource/coach-3.jpg" alt="" />
+                        <img src="{{asset('images/resource/coach-3.jpg')}}" alt="" />
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <a href="trainer.html" class="overlay-link"></a>
@@ -1030,7 +1028,7 @@
             <div class="coach-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="images/resource/coach-4.jpg" alt="" />
+                        <img src="{{asset('images/resource/coach-4.jpg')}}" alt="" />
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <a href="trainer.html" class="overlay-link"></a>
@@ -1139,22 +1137,22 @@
                 <div class="client-thumb-outer">
                     <div class="client-thumbs-carousel owl-carousel owl-theme">
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-1.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{asset('images/resource/author-1.jpg')}}" alt=""></figure>
                         </div>
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-2.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{asset('images/resource/author-2.jpg')}}" alt=""></figure>
                         </div>
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-3.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{asset('images/resource/author-3.jpg')}}" alt=""></figure>
                         </div>
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-4.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{asset('images/resource/author-4.jpg')}}" alt=""></figure>
                         </div>
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-5.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{asset('images/resource/author-5.jpg')}}" alt=""></figure>
                         </div>
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-6.jpg" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{asset('images/resource/author-6.jpg')}}" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -1268,7 +1266,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-1.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-1.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>27</span>SEP
                                     </div>
@@ -1289,7 +1287,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-2.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-2.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>7</span>SEP
                                     </div>
@@ -1305,7 +1303,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-3.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-3.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>18</span>SEP
                                     </div>
@@ -1330,7 +1328,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-1.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-1.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>27</span>SEP
                                     </div>
@@ -1351,7 +1349,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-2.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-2.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>7</span>SEP
                                     </div>
@@ -1367,7 +1365,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-3.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-3.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>18</span>SEP
                                     </div>
@@ -1392,7 +1390,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-1.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-1.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>27</span>SEP
                                     </div>
@@ -1413,7 +1411,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-2.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-2.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>7</span>SEP
                                     </div>
@@ -1429,7 +1427,7 @@
                             <div class="inner-box">
                                 <a href="blog-detail.html" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="images/resource/news-3.jpg" alt="" />
+                                    <img src="{{asset('images/resource/news-3.jpg')}}" alt="" />
                                     <div class="post-date">
                                         <span>18</span>SEP
                                     </div>
@@ -1469,11 +1467,11 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="index.html"><img src="images/footer-logo.svg" alt="" /></a>
+                                        <a href="index.html"><img src="{{asset('images/footer-logo.svg')}}" alt="" /></a>
                                     </div>
                                     <!-- Footer Mobile Logo -->
                                     <div class="footer-mobile-logo">
-                                        <a href="index.html"><img src="images/logo.svg" alt="" title=""></a>
+                                        <a href="index.html"><img src="{{asset('images/logo.svg')}}" alt="" title=""></a>
                                     </div>
                                     <ul class="info-list">
                                         <li><span>Address:</span>4578 Marmora Road, Glasgow</li>
@@ -1500,19 +1498,19 @@
                                     <div class="widget-content">
 
                                         <div class="post">
-                                            <div class="thumb"><a href="blog-detail.html"><img src="images/resource/post-thumb-1.jpg" alt=""></a></div>
+                                            <div class="thumb"><a href="blog-detail.html"><img src="{{asset('images/resource/post-thumb-1.jpg')}}" alt=""></a></div>
                                             <h5><a href="blog-detail.html">HOW TO MAXIMISE TIME SPENT AT THE GYM</a></h5>
                                             <span class="date">JUNE 21, 2020</span>
                                         </div>
 
                                         <div class="post">
-                                            <div class="thumb"><a href="blog-detail.html"><img src="images/resource/post-thumb-2.jpg" alt=""></a></div>
+                                            <div class="thumb"><a href="blog-detail.html"><img src="{{asset('images/resource/post-thumb-2.jpg')}}" alt=""></a></div>
                                             <h5><a href="blog-detail.html">10 TIPS HOW TO PREPARE MEALS FAST AND EASY</a></h5>
                                             <span class="date">JUNE 21, 2020</span>
                                         </div>
 
                                         <div class="post">
-                                            <div class="thumb"><a href="blog-detail.html"><img src="images/resource/post-thumb-3.jpg" alt=""></a></div>
+                                            <div class="thumb"><a href="blog-detail.html"><img src="{{asset('images/resource/post-thumb-3.jpg')}}" alt=""></a></div>
                                             <h5><a href="blog-detail.html">SIMPLE CONDITION FOR ALL AROUND FITNESS</a></h5>
                                             <span class="date">JUNE 21, 2020</span>
                                         </div>
@@ -1536,23 +1534,23 @@
 
                                         <div class="images-outer clearfix">
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-1.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/1.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-1.jpg')}}" alt=""></a></figure>
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-2.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/2.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-2.jpg')}}" alt=""></a></figure>
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/3.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-3.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/3.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-3.jpg')}}" alt=""></a></figure>
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/4.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-4.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/4.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-4.jpg')}}" alt=""></a></figure>
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/5.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-5.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/5.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-5.jpg')}}" alt=""></a></figure>
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/6.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-6.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/6.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-6.jpg')}}" alt=""></a></figure>
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/7.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-7.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/7.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-7.jpg')}}" alt=""></a></figure>
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/8.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-8.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/8.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-8.jpg')}}" alt=""></a></figure>
                                             <!--Image Box-->
-                                            <figure class="image-box"><a href="images/gallery/9.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-9.jpg" alt=""></a></figure>
+                                            <figure class="image-box"><a href="{{asset('images/gallery/9.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{asset('images/gallery/footer-gallery-thumb-9.jpg')}}" alt=""></a></figure>
                                         </div>
 
                                     </div>
@@ -1569,7 +1567,7 @@
                                         <form method="post" action="contact.html">
                                             <div class="form-group">
                                                 <input type="email" name="email" value="" placeholder="Email" required="">
-                                                <button type="submit" class="theme-btn submit-btn"><span><img src="images/icons/message-icon.png" alt="" /></span></button>
+                                                <button type="submit" class="theme-btn submit-btn"><span><img src="{{asset('images/icons/message-icon.png')}}" alt="" /></span></button>
                                             </div>
                                         </form>
                                     </div>
@@ -1643,16 +1641,16 @@
     </div>
 </div>
 
-<script src="js/jquery.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/script.js"></script>
+<script src="{{asset('js/jquery.js')}}"></script>
+<script src="{{asset('js/popper.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{asset('js/jquery.fancybox.js')}}"></script>
+<script src="{{asset('js/appear.js')}}"></script>
+<script src="{{asset('js/owl.js')}}"></script>
+<script src="{{asset('js/wow.js')}}"></script>
+<script src="{{asset('js/jquery-ui.js')}}"></script>
+<script src="{{asset('js/script.js')}}"></script>
 
 </body>
 </html>
