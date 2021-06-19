@@ -7,6 +7,8 @@ use App\Http\Requests\CourseRequest;
 use App\Http\Requests\TrainserRequest;
 use App\Services\CalendarService;
 use App\Services\CourseService;
+use App\Services\HourService;
+use App\Services\PhotoService;
 use App\Services\TrainerService;
 use Illuminate\Http\Request;
 use function compact;
@@ -74,6 +76,31 @@ class AuthController extends Controller
     public function calendarAdd(CalendarRequest $request, CalendarService $calendarService)
     {
         $calendarService->aggiungi($request);
+        return redirect()->back();
+    }
+
+    public function photos(PhotoService $photoService)
+    {
+        $firstMain = $photoService->firstMain();
+        $secondMain = $photoService->secondMain();
+        return view('adminPanel.photos', compact('firstMain', 'secondMain'));
+    }
+
+    public function photoAdd(Request $request, PhotoService $photoService)
+    {
+        $photoService->aggiungi($request);
+        return redirect()->back();
+    }
+
+    public function houres(HourService $hourService)
+    {
+        $orario = $hourService->index();
+        return view('adminPanel.orario', compact('orario'));
+    }
+
+    public function houreEdit(Request $request, HourService $hourService)
+    {
+        $hourService->edit($request);
         return redirect()->back();
     }
 }

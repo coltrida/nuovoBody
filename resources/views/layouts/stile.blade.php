@@ -84,60 +84,9 @@
 
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li class="dropdown"><a href="#">About Us</a>
-                                        <ul>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="timetable.html">Programma</a></li>
-                                            <li><a href="commingsoon.html">In Arrivo</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a href="#">Personal Trainers</a>
-                                        <ul>
-                                            <li><a href="trainer.html">Trainer 01</a></li>
-                                            <li><a href="trainer-2.html">Trainer 02</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a href="#">Shop</a>
-                                        <ul>
-                                            <li><a href="shop-left.html">Shop Left Sidebar</a></li>
-                                            <li><a href="shop-right.html">Shop Right Sidebar</a></li>
-                                            <li><a href="shop-single.html">Product Single</a></li>
-                                            <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Our Blog</a></li>
-                                            <li><a href="blog-classic.html">Blog Classic</a></li>
-                                            <li><a href="blog-detail.html">Blog Detail One</a></li>
-                                            <li><a href="blog-detail-two.html">Blog Detail Two</a></li>
-                                            <li><a href="not-found.html">Not Found</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contattaci</a></li>
-                                    @guest
-                                        <li><a href="{{ route('login') }}">Login</a></li>
-                                    @else
-                                        <li class="dropdown"><a href="#">{{ Auth::user()->name }}</a>
-                                            <ul>
-                                                <li><a href="{{ route('admin.index') }}">Dashbord</a></li>
-                                                <li><a href="#">
-                                                        <form method="POST" action="{{ route('logout') }}">
-                                                            @csrf
 
-                                                            <x-dropdown-link :href="route('logout')"
-                                                                             onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                                                {{ __('Log Out') }}
-                                                            </x-dropdown-link>
-                                                        </form>
-                                                    </a></li>
-                                            </ul>
-                                        </li>
+                                    @include('partials.menu')
 
-                                    @endguest
                                 </ul>
                             </div>
                         </nav>
@@ -196,58 +145,9 @@
             <div class="menu-box">
                 <nav class="full-menu">
                     <ul class="navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown"><a href="#">About Us</a>
-                            <ul>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="timetable.html">Programma</a></li>
-                                <li><a href="commingsoon.html">In Arrivo</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#">Personal Trainers</a>
-                            <ul>
-                                <li><a href="trainer.html">Trainer 01</a></li>
-                                <li><a href="trainer-2.html">Trainer 02</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#">Shop</a>
-                            <ul>
-                                <li><a href="shop-left.html">Shop Left Sidebar</a></li>
-                                <li><a href="shop-right.html">Shop Right Sidebar</a></li>
-                                <li><a href="shop-single.html">Product Single</a></li>
-                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#">Blog</a>
-                            <ul>
-                                <li><a href="blog.html">Our Blog</a></li>
-                                <li><a href="blog-classic.html">Blog Classic</a></li>
-                                <li><a href="blog-detail.html">Blog Detail One</a></li>
-                                <li><a href="blog-detail-two.html">Blog Detail Two</a></li>
-                                <li><a href="not-found.html">Not Found</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contattaci</a></li>
-                        @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                        @else
-                            <li>
-                                <a href="">
-                                    <form method="POST" action="{{ route('logout') }}">
-                                        @csrf
 
-                                        <x-dropdown-link :href="route('logout')"
-                                                         onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                            {{ __('Log Out') }}
-                                        </x-dropdown-link>
-                                    </form>
-                                </a>
+                       @include('partials.menu')
 
-                            </li>
-
-                        @endguest
                     </ul>
                 </nav>
             </div>
@@ -286,7 +186,19 @@
                                             <a href="tel:1-123-456-78-89">+1-123-456-78-89</a><br>
                                             <a href="tel:1-123-456-78-80">+1-123-456-78-80</a>
                                         </li>
-                                        <li><span>Working Hours:</span>Monday-Sunday: 07:00 - 22:00</li>
+                                        <li style="font-size: 12px"><span>Working Hours:</span>
+                                            @foreach($orario as $giorno)
+                                                <div class="row">
+                                                    <div class="col">{{$giorno->giornosettimana}}</div>
+                                                    <div class="col">{{$giorno->oraMattinoInizio}}/{{$giorno->oraMattinoFine}}</div>
+                                                    <div class="col">
+                                                        @if(isset($giorno->oraPomeriggioInizio))
+                                                            {{$giorno->oraPomeriggioInizio}}/{{$giorno->oraPomeriggioFine}}
+                                                        @endif
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        </li>
                                         <li><span>Email:</span><a href="mailto:info@bigbear.com">info@bigbear.com</a>
                                         </li>
                                         <li class="social-links"><span>Our Socials:</span>
@@ -459,7 +371,7 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <div class="copyright">DESIGN BY KADIROV. 2020</div>
+                <div class="copyright">COLTRICAT@2021</div>
             </div>
 
         </div>

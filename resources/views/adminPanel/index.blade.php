@@ -73,6 +73,18 @@
                     <span>Calendar</span></a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('admin.houres')}}">
+                    <i class="fas fa-fw fa-clock"></i>
+                    <span>Orari</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('admin.photos')}}">
+                    <i class="fas fa-fw fa-images"></i>
+                    <span>Foto</span></a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 

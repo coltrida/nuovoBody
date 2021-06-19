@@ -12,7 +12,7 @@
                     <div class="content-boxed">
                         <div class="inner-boxed">
                             <h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-                            <div class="text">BLACKFIT – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
+                            <div class="text">BODYLINE CORTONA – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
                             <div class="btns-box">
                                 <div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
                             </div>
@@ -29,7 +29,7 @@
                     <div class="content-boxed">
                         <div class="inner-boxed">
                             <h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-                            <div class="text">BLACKFIT – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
+                            <div class="text">BODYLINE CORTONA – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
                             <div class="btns-box">
                                 <div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
                             </div>
@@ -46,7 +46,7 @@
                     <div class="content-boxed">
                         <div class="inner-boxed">
                             <h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-                            <div class="text">BLACKFIT – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
+                            <div class="text">BODYLINE CORTONA – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
                             <div class="btns-box">
                                 <div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
                             </div>
@@ -55,23 +55,6 @@
                 </div>
 
             </div>
-
-            {{--            <div class="slide">
-                            <div id="quarta" class="image-layer"></div>
-                            <div class="auto-container">
-                                <!-- Content Boxed -->
-                                <div class="content-boxed">
-                                    <div class="inner-boxed">
-                                        <h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-                                        <div class="text">BLACKFIT – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
-                                        <div class="btns-box">
-                                            <div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>--}}
 
         </div>
 
@@ -93,7 +76,7 @@
                 <!-- Testimonial Block -->
                 <div class="testimonial-block">
                     <div class="inner-box">
-                        <div class="text">Want to be healthy and have a perfect body? BLACKFIT is the right decision for you! It will create your personal training program and balance your diet so you could get the <br> shape of your dream shortly!</div>
+                        <div class="text">Want to be healthy and have a perfect body? BODYLINE CORTONA is the right decision for you! It will create your personal training program and balance your diet so you could get the <br> shape of your dream shortly!</div>
                     </div>
                 </div>
 
@@ -112,7 +95,7 @@
                     <div class="inner-box">
                         <div class="image">
                             <a href="body-builder.html" class="overlay-link"></a>
-                            <img src="{{asset('images/resource/service-1.jpg')}}" alt="" />
+                            <img src="{{asset('storage/secondMain/service-1.jpg')}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
@@ -130,7 +113,7 @@
                     <div class="inner-box">
                         <div class="image">
                             <a href="body-builder.html" class="overlay-link"></a>
-                            <img src="{{asset('images/resource/service-2.jpg')}}" alt="" />
+                            <img src="{{asset('storage/secondMain/service-2.jpg')}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
@@ -148,7 +131,7 @@
                     <div class="inner-box">
                         <div class="image">
                             <a href="body-builder.html" class="overlay-link"></a>
-                            <img src="{{asset('images/resource/service-3.jpg')}}" alt="" />
+                            <img src="{{asset('storage/secondMain/service-3.jpg')}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
@@ -167,7 +150,7 @@
                     <div class="inner-box">
                         <div class="image">
                             <a href="body-builder.html" class="overlay-link"></a>
-                            <img src="{{asset('images/resource/service-4.jpg')}}" alt="" />
+                            <img src="{{asset('storage/secondMain/service-4.jpg')}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
@@ -441,7 +424,7 @@
     <section class="counter-section">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2><span>why</span> choose us</h2>
+                <h2><span>Perchè </span>sceglierci</h2>
                 <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
             </div>
 
@@ -456,7 +439,7 @@
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="3000" data-stop="12">0</span>
                                 </div>
-                                <div class="counter-title">Training Programs</div>
+                                <div class="counter-title">Progrmmi di Training</div>
                             </div>
                         </div>
                     </div>
@@ -468,7 +451,7 @@
                                 <div class="count-outer count-box alternate">
                                     <span class="count-text" data-speed="5000" data-stop="14">0</span>
                                 </div>
-                                <div class="counter-title">Years Experience</div>
+                                <div class="counter-title">Anni di esperienza</div>
                             </div>
                         </div>
                     </div>
@@ -480,7 +463,7 @@
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="5000" data-stop="357">0</span>
                                 </div>
-                                <div class="counter-title">Happy clients</div>
+                                <div class="counter-title">Clienti Felici</div>
                             </div>
                         </div>
                     </div>
@@ -505,7 +488,7 @@
     <!-- End Counter Section -->
 
     <!-- Pricing Section -->
-    <section class="pricing-section" style="background-image: url(images/background/1.jpg)">
+    <section id="priceSection" class="pricing-section">
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2><span>Program</span> Pricing</h2>
@@ -581,7 +564,7 @@
     <section class="coaches-section">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2><span>Our</span> Coaches</h2>
+                <h2><span>I nostri</span> Trainers</h2>
                 <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
             </div>
         </div>
@@ -598,7 +581,7 @@
                             <a href="trainer.html" class="overlay-link"></a>
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h4><a href="blog-detail.html">John</a></h4>
+                                    <h4><a href="blog-detail.html">ROBERTO</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -606,7 +589,7 @@
                         <div class="overlay-box-two">
                             <a href="trainer.html" class="overlay-link-two"></a>
                             <div class="content">
-                                <h5><a href="blog-detail.html">JOHN <br> ABRAHAM</a></h5>
+                                <h5><a href="blog-detail.html">ROBERTO <br> PAOLINI</a></h5>
                                 <div class="text">8 years of experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
                                 <!-- Social Box -->
                                 <div class="social-box">
@@ -630,7 +613,7 @@
                             <a href="trainer.html" class="overlay-link"></a>
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h4><a href="blog-detail.html">DONALD</a></h4>
+                                    <h4><a href="blog-detail.html">DAVIDE</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -638,7 +621,7 @@
                         <div class="overlay-box-two">
                             <a href="trainer.html" class="overlay-link-two"></a>
                             <div class="content">
-                                <h5><a href="blog-detail.html">DONALD</a></h5>
+                                <h5><a href="blog-detail.html">DAVIDE</a></h5>
                                 <div class="text">8 years of experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
                                 <!-- Social Box -->
                                 <div class="social-box">
@@ -662,7 +645,7 @@
                             <a href="trainer.html" class="overlay-link"></a>
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <h4><a href="blog-detail.html">MONICA</a></h4>
+                                    <h4><a href="blog-detail.html">NADIA</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -670,7 +653,7 @@
                         <div class="overlay-box-two">
                             <a href="trainer.html" class="overlay-link-two"></a>
                             <div class="content">
-                                <h5><a href="blog-detail.html">MONICA</a></h5>
+                                <h5><a href="blog-detail.html">NADIA</a></h5>
                                 <div class="text">8 years of experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
                                 <!-- Social Box -->
                                 <div class="social-box">
@@ -849,72 +832,11 @@
     </section>
     <!-- End Coaches Section -->
 
-    <!-- Calculator Section -->
-    <section class="calculator-section">
-        <div class="auto-container">
-            <div class="sec-title centered">
-                <h2><span>bmi</span> CALCULATOR</h2>
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
-            </div>
-
-            <div class="inner-container">
-
-                <!-- Default Form -->
-                <div class="default-form">
-
-                    <!-- Default Form -->
-                    <form method="post" action="contact.html">
-                        <div class="row clearfix">
-
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="cm" placeholder="Height / Cm" required>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="weight" placeholder="Weight / kg" required>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="age" placeholder="Age" required>
-                            </div>
-
-                            <div class="form-group col-lg-4 col-md-6 col-sm-12">
-                                <select class="custom-select-box">
-                                    <option>Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-lg-4 col-md-6 col-sm-12">
-                                <select class="custom-select-box">
-                                    <option>Select an activity factor</option>
-                                    <option>Factor 01</option>
-                                    <option>Factor 02</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-lg-4 col-md-6 col-sm-12">
-                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">CALCULATE</span></button>
-                            </div>
-
-                        </div>
-                    </form>
-
-                    <!--End Default Form -->
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- End Calculator Section -->
-
     <!-- Testimonial Section Two -->
     <section class="testimonial-section-two">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2><span>WHAT OUR</span><br>CLIENTS SAY</h2>
+                <h2><span>COSA DICONO </span><br>I NOSTRI CLIENTI</h2>
                 <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
             </div>
 
@@ -953,7 +875,7 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
                             <div class="author-info">
                                 <div class="author-name">Samantha Green</div>
                                 <div class="designation">CEO of Company</div>
@@ -966,7 +888,7 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
                             <div class="author-info">
                                 <div class="author-name">Samantha Green</div>
                                 <div class="designation">CEO of Company</div>
@@ -979,7 +901,7 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
                             <div class="author-info">
                                 <div class="author-name">Samantha Green</div>
                                 <div class="designation">CEO of Company</div>
@@ -992,7 +914,7 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
                             <div class="author-info">
                                 <div class="author-name">Samantha Green</div>
                                 <div class="designation">CEO of Company</div>
@@ -1005,7 +927,7 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
                             <div class="author-info">
                                 <div class="author-name">Samantha Green</div>
                                 <div class="designation">CEO of Company</div>
@@ -1018,7 +940,7 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BLACKFIT’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
                             <div class="author-info">
                                 <div class="author-name">Samantha Green</div>
                                 <div class="designation">CEO of Company</div>
@@ -1038,7 +960,7 @@
     <section class="news-section">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2><span>LATEST</span><br>BLOG POSTS</h2>
+                <h2><span>ULTIME</span><br>NOTIZIE</h2>
                 <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
             </div>
 

@@ -26,6 +26,8 @@ use function stristr;
  * @method static \Illuminate\Database\Eloquent\Builder|Trainer whereNome($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Trainer whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string|null $descrizione
+ * @method static \Illuminate\Database\Eloquent\Builder|Trainer whereDescrizione($value)
  */
 class Trainer extends Model
 {

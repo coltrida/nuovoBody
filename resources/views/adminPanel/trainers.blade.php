@@ -6,20 +6,30 @@
                     <div class="card shadow mb-4" style="width: 100%">
                         <div class="card-body">
                             <!-- Page insert -->
-                            <form  class="row" action="{{route('admin.trainer.add')}}" method="post" enctype="multipart/form-data">
+                            <form  action="{{route('admin.trainer.add')}}" method="post" enctype="multipart/form-data">
                                 @csrf
-                                <div class="col-auto">
-                                    <input id="nome" type="text" name="nome" class="form-control"  placeholder="Nome Trainer">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <input id="nome" type="text" name="nome" class="form-control"  placeholder="Nome Trainer">
+                                    </div>
+                                    <div class="col-auto">
+                                        <input id="cognome" type="text" name="cognome" class="form-control"  placeholder="Cognome Trainer">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <textarea class="form-control" name="descrizione" rows="2" placeholder="descrizione"></textarea>
+                                    </div>
                                 </div>
-                                <div class="col-auto">
-                                    <input id="cognome" type="text" name="cognome" class="form-control"  placeholder="Cognome Trainer">
+
+                                <div class="row mt-2">
+                                    <div class="col-auto">
+                                        <input class="form-control" type="file" name="foto">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary mb-3">Inserisci</button>
+                                    </div>
                                 </div>
-                                <div class="col-auto">
-                                    <input class="form-control" type="file" name="foto">
-                                </div>
-                                <div class="col-auto">
-                                    <button type="submit" class="btn btn-primary mb-3">Inserisci</button>
-                                </div>
+
                             </form >
                         </div>
                     </div>
@@ -31,8 +41,9 @@
                                 <table class="table table-bordered" style="width: 100%">
                                     <thead>
                                         <tr>
-                                            <th>Nome Trainer</th>
-                                            <th>Cognome Trainer</th>
+                                            <th>Nome</th>
+                                            <th>Cognome</th>
+                                            <th>Descrizione</th>
                                             <th>foto</th>
                                             <th style="text-align: center">azioni</th>
                                         </tr>
@@ -42,6 +53,7 @@
                                             <tr>
                                                 <td style="vertical-align: middle">{{$item->nome}}</td>
                                                 <td style="vertical-align: middle">{{$item->cognome}}</td>
+                                                <td style="vertical-align: middle">{{$item->descrizione}}</td>
                                                 <td>
                                                     @if(isset($item->foto))
                                                         <img width="100" src="{{asset($item->path)}}" alt="">

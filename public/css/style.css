@@ -8653,15 +8653,15 @@ body.visible-menu-bar .fullscreen-menu{
 }
 
 #prima{
-    background:url(../images/main-slider/image-1.jpg);
+    background:url(../storage/firstMain/image-1.jpg);
 }
 
 #seconda{
-    background:url(../images/main-slider/image-3.jpg);
+    background:url(../storage/firstMain/image-2.jpg);
 }
 
 #terza{
-    background:url(../images/main-slider/image-4.jpg);
+    background:url(../storage/firstMain/image-3.jpg);
 }
 
 /*#quarta{
@@ -8670,4 +8670,12 @@ body.visible-menu-bar .fullscreen-menu{
 
 #infondo{
     background:url(../images/background/2.jpg);
+
+    background-repeat: no-repeat;
+}
+
+#priceSection{
+    background:url(../images/background/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

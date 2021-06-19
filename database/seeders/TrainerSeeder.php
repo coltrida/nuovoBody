@@ -18,14 +18,17 @@ class TrainerSeeder extends Seeder
             [
                 'nome' => 'Mario',
                 'cognome' => 'Rossi',
+                'descrizione' => 'ghhgvjhgjhg yuhfgjhgjfhgjbgh ghyhgjhgjhgj guhugjhhgjhkhjghkhgjhhgjhhgjh hgjnhgjhhgjbhgjb'
             ],
             [
                 'nome' => 'Gino',
                 'cognome' => 'Strubalino',
+                'descrizione' => 'ghhgvjhgjhg yuhfgjhgjfhgjbgh ghyhgjhgjhgj guhugjhhgjhkhjghkhgjhhgjhhgjh  hygjghj hygjghgjbn hygjhj hgjnhgjhhgjbhgjb'
             ],
             [
                 'nome' => 'Michele',
                 'cognome' => 'Broccomire',
+                'descrizione' => 'ghhgvjhgjhg yuhfgjhgjfhgjbgh ghyhgjhgjhgj guhugjhhgjhkh'
             ],
         ]);
     }

@@ -28,6 +28,7 @@ class TrainerService
         $trainer = new Trainer();
         $trainer->nome = $request->nome;
         $trainer->cognome = $request->cognome;
+        $trainer->descrizione = $request->descrizione;
         $trainer->save();
 
         if ($request->hasFile('foto')){

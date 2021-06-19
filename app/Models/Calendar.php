@@ -25,12 +25,40 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Calendar whereUpdatedAt($value)
  * @mixin \Eloquent
  * @property-read \App\Models\Course $corso
+ * @property-read \App\Models\Course $course
+ * @property-read mixed $giornosettimana
  */
 class Calendar extends Model
 {
     use HasFactory;
 
     protected $guarded = [];
+
+    public function getGiornosettimanaAttribute(){
+        $giorno = '';
+        switch ($this->giorno) {
+            case 1:
+                $giorno = 'Lunedì';
+                break;
+            case 2:
+                $giorno = 'Martedì';
+                break;
+            case 3:
+                $giorno = 'Mercoledì';
+                break;
+            case 4:
+                $giorno = 'Giovedì';
+                break;
+            case 5:
+                $giorno = 'Venerdì';
+                break;
+            case 6:
+                $giorno = 'Sabato';
+                break;
+        }
+
+        return $giorno;
+    }
 
     public function course()
     {

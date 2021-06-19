@@ -58,8 +58,8 @@
                                     <tbody>
                                         @foreach($calendars as $item)
                                             <tr>
-                                                <td>{{$item->giorno}}</td>
-                                                <td>{{$item->oraInizio}}:00</td>
+                                                <td>{{$item->giornosettimana}}</td>
+                                                <td>{{$item->oraInizio}}:00 - {{$item->oraInizio+1}}:00</td>
                                                 <td>{{$item->course->nome}}</td>
                                                 <td style="text-align: center">
                                                     <a href="{{route('admin.calendar.delete', $item->id)}}">
