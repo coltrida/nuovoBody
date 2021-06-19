@@ -122,6 +122,7 @@
                                     @else
                                         <li class="dropdown"><a href="#">{{ Auth::user()->name }}</a>
                                             <ul>
+                                                <li><a href="{{ route('admin.index') }}">Dashbord</a></li>
                                                 <li><a href="#">
                                                         <form method="POST" action="{{ route('logout') }}">
                                                             @csrf
