@@ -17,7 +17,7 @@ class CreateTrainersTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('cognome');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->timestamps();
         });
     }

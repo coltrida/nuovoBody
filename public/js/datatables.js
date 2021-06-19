@@ -12,11 +12,15 @@ $(document).ready(function() {
               { data: 'trainer_id' },
               {
                   data: 'id',
-                  render: function (data) {
-                      return '<a href="#" class="btn btn-danger">'+data+'</a> '
+                  render: function (data)
+                  {
+                      let link = '/api/courses/elimina/'+data;
+                      let classeBtn = "btn btn-danger";
+
+                      return "<a href="+ link + " class="+ classeBtn +" >" +
+                          '<i title="elimina" class="fas fa-trash"></i></a> '
                   }
                },
-//would like to add repeating button here
           ]
       }
   );

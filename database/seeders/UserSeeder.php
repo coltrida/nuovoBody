@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
     {
         User::create([
             'name' => 'cacao',
-            'email' => 'admin@admin.it',
+            'email' => 'cacao@cacao.it',
             'password' => Hash::make('123456'),
             'email_verified_at' => now(),
             'created_at' => now(),

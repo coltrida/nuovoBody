@@ -8,7 +8,16 @@ Route::get('/', [FrontController::class, 'index'])->name('inizio');
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/', [AuthController::class, 'index'])->name('admin.index');
-    Route::get('/corsi', [AuthController::class, 'corsi'])->name('admin.corsi');
+
+    /*----------- corsi -------------*/
+    Route::get('/courses', [AuthController::class, 'courses'])->name('admin.courses');
+    Route::get('courses/elimina/{id}', [AuthController::class, 'courseDelete'])->name('admin.course.delete');
+    Route::post('courses/', [AuthController::class, 'courseAdd'])->name('admin.course.add');
+
+    /*----------- trainer -------------*/
+    Route::get('/trainers', [AuthController::class, 'trainers'])->name('admin.trainers');
+    Route::get('trainers/elimina/{id}', [AuthController::class, 'trainersDelete'])->name('admin.trainer.delete');
+    Route::post('trainers/', [AuthController::class, 'trainersAdd'])->name('admin.trainer.add');
 });
 
 

@@ -56,9 +56,21 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="{{route('admin.corsi')}}">
-                    <i class="fas fa-fw fa-table"></i>
+                <a class="nav-link" href="{{route('admin.courses')}}">
+                    <i class="fas fa-fw fa-dumbbell"></i>
                     <span>Corsi</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('admin.trainers')}}">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Trainers</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('admin.trainers')}}">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Calendar</span></a>
             </li>
 
             <!-- Divider -->
