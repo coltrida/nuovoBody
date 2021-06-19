@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CalendarRequest;
 use App\Http\Requests\CourseRequest;
 use App\Http\Requests\TrainserRequest;
+use App\Services\CalendarService;
 use App\Services\CourseService;
 use App\Services\TrainerService;
 use Illuminate\Http\Request;
@@ -53,6 +55,25 @@ class AuthController extends Controller
     public function trainersAdd(TrainserRequest $request, TrainerService $trainerService)
     {
         $trainerService->aggiungi($request);
+        return redirect()->back();
+    }
+
+    public function calendar(CalendarService $calendarService, CourseService $courseService)
+    {
+        $calendars = $calendarService->index();
+        $courses = $courseService->index();
+        return view('adminPanel.calendar', compact('calendars', 'courses'));
+    }
+
+    public function calendarDelete($id, CalendarService $calendarService)
+    {
+        $calendarService->elimina($id);
+        return redirect()->back();
+    }
+
+    public function calendarAdd(CalendarRequest $request, CalendarService $calendarService)
+    {
+        $calendarService->aggiungi($request);
         return redirect()->back();
     }
 }

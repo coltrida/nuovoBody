@@ -68,7 +68,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{route('admin.trainers')}}">
+                <a class="nav-link" href="{{route('admin.calendar')}}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Calendar</span></a>
             </li>

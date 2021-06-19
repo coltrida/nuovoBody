@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FrontController;
-use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', [FrontController::class, 'index'])->name('inizio');
 
@@ -18,6 +18,11 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/trainers', [AuthController::class, 'trainers'])->name('admin.trainers');
     Route::get('trainers/elimina/{id}', [AuthController::class, 'trainersDelete'])->name('admin.trainer.delete');
     Route::post('trainers/', [AuthController::class, 'trainersAdd'])->name('admin.trainer.add');
+
+    /*----------- calendar -------------*/
+    Route::get('/calendar', [AuthController::class, 'calendar'])->name('admin.calendar');
+    Route::get('calendar/elimina/{id}', [AuthController::class, 'calendarDelete'])->name('admin.calendar.delete');
+    Route::post('calendar/', [AuthController::class, 'calendarAdd'])->name('admin.calendar.add');
 });
 
 

@@ -6,7 +6,6 @@ namespace App\Services;
 
 use App\Models\Trainer;
 use Illuminate\Support\Facades\Storage;
-use function dd;
 
 class TrainerService
 {
