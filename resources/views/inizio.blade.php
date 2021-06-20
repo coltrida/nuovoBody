@@ -571,37 +571,39 @@
 
         <div class="four-item-carousel owl-carousel owl-theme">
 
-            <!-- Coach Block -->
-            <div class="coach-block">
-                <div class="inner-box">
-                    <div class="image">
-                        <img src="{{asset('images/resource/coach-1.jpg')}}" alt="" />
-                        <!-- Overlay Box -->
-                        <div class="overlay-box">
-                            <a href="trainer.html" class="overlay-link"></a>
-                            <div class="overlay-inner">
-                                <div class="content">
-                                    <h4><a href="blog-detail.html">ROBERTO</a></h4>
+            @foreach($trainers as $item)
+                <div class="coach-block">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{asset("storage/trainers/$item->id.jpg")}}" alt="" />
+                            <!-- Overlay Box -->
+                            <div class="overlay-box">
+                                <a href="trainer.html" class="overlay-link"></a>
+                                <div class="overlay-inner">
+                                    <div class="content">
+                                        <h4><a href="blog-detail.html">{{$item->nome}}</a></h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Overlay Box Two -->
-                        <div class="overlay-box-two">
-                            <a href="trainer.html" class="overlay-link-two"></a>
-                            <div class="content">
-                                <h5><a href="blog-detail.html">ROBERTO <br> PAOLINI</a></h5>
-                                <div class="text">8 years of experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
-                                <!-- Social Box -->
-                                <div class="social-box">
-                                    <a href="#" class="fa fa-facebook"></a>
-                                    <a href="#" class="fa fa-twitter"></a>
-                                    <a href="#" class="fa fa-instagram"></a>
+                            <!-- Overlay Box Two -->
+                            <div class="overlay-box-two">
+                                <a href="trainer.html" class="overlay-link-two"></a>
+                                <div class="content">
+                                    <h5><a href="blog-detail.html">{{$item->nome}} <br> {{$item->cognome}}</a></h5>
+                                    <div class="text">{{$item->descrizione}}</div>
+                                    <!-- Social Box -->
+                                    {{--<div class="social-box">
+                                        <a href="#" class="fa fa-facebook"></a>
+                                        <a href="#" class="fa fa-instagram"></a>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
+            <!-- Coach Block -->
+      {{--
 
             <!-- Coach Block -->
             <div class="coach-block">
@@ -827,6 +829,7 @@
                 </div>
             </div>
 
+     --}}
         </div>
 
     </section>

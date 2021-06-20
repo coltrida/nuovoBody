@@ -1,4 +1,4 @@
-<li><a href="index.html">Home</a></li>
+<li><a href="{{route('inizio')}}">Home</a></li>
 <li class="dropdown"><a href="#">Chi Siamo</a>
     <ul>
         <li><a href="about.html">Chi Siamo</a></li>
@@ -37,7 +37,7 @@
 @else
     <li class="dropdown"><a href="#">{{ Auth::user()->name }}</a>
         <ul>
-            <li><a href="{{ route('admin.index') }}">Dashbord</a></li>
+            <li><a target="_blank" href="{{ route('admin.index') }}">Dashbord</a></li>
             <li><a href="#">
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf

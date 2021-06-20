@@ -17,7 +17,8 @@ class CreateCalendarsTable extends Migration
             $table->id();
             $table->string('giorno');
             $table->integer('oraInizio');
-            $table->bigInteger('course_id');
+
+            $table->foreignId('course_id')->constrained('courses')->onDelete('cascade');
             $table->timestamps();
         });
     }

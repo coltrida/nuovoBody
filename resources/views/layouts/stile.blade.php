@@ -37,18 +37,18 @@
 
                     <!-- Logo Box -->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="{{asset('images/logo.png')}}" alt="" title=""></a>
+                        <div class="logo"><a href="{{route('inizio')}}"><img src="{{asset('images/logo.png')}}" alt="" title=""></a>
                         </div>
                     </div>
 
                     <!-- Logo -->
                     <div class="mobile-logo pull-left">
-                        <a href="index.html" title=""><img src="{{asset('images/logo-small.png')}}" alt="" title=""></a>
+                        <a href="{{route('inizio')}}" title=""><img src="{{asset('images/logo-small.png')}}" alt="" title=""></a>
                     </div>
 
                     <!-- Header Social Box -->
                     <div class="header-social-box clearfix">
-                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="https://www.facebook.com/bodylinecortona/" class="fa fa-facebook"></a>
                         <a href="#" class="fa fa-instagram"></a>
                         <a href="#" class="fa fa-linkedin"></a>
                     </div>

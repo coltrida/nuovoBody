@@ -4,10 +4,10 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/5.jpg)">
         <div class="auto-container">
-            <h2>TIME TABLE</h2>
+            <h2>Calendario Corsi</h2>
             <ul class="page-breadcrumb">
                 <li><a href="index.html">home</a></li>
-                <li>Time Table</li>
+                <li>Calendario Corsi</li>
             </ul>
         </div>
     </section>
