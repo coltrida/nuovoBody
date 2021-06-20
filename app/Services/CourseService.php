@@ -18,6 +18,11 @@ class CourseService
         return Course::with('trainer')->orderBy('nome')->get();
     }
 
+    public function listaCorsiConCalendario()
+    {
+        return Course::with('calendars')->orderBy('nome')->get();
+    }
+
     public function elimina($id)
     {
         return Course::destroy($id);

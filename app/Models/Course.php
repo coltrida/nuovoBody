@@ -36,4 +36,9 @@ class Course extends Model
     {
         return $this->belongsTo(Trainer::class);
     }
+
+    public function calendars()
+    {
+        return $this->hasMany(Calendar::class);
+    }
 }

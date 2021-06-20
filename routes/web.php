@@ -5,6 +5,7 @@ use App\Http\Controllers\FrontController;
 
 
 Route::get('/', [FrontController::class, 'index'])->name('inizio');
+Route::get('/calendario', [FrontController::class, 'calendario'])->name('calendario');
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/', [AuthController::class, 'index'])->name('admin.index');

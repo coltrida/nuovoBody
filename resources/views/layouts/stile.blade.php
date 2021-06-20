@@ -173,7 +173,7 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="index.html"><img src="{{asset('images/footer-logo.svg')}}" alt=""/></a>
+                                        <a href="index.html"><img width="100" src="{{asset('images/logo-small.png')}}" alt=""/></a>
                                     </div>
                                     <!-- Footer Mobile Logo -->
                                     <div class="footer-mobile-logo">
@@ -181,10 +181,9 @@
                                                                   title=""></a>
                                     </div>
                                     <ul class="info-list">
-                                        <li><span>Address:</span>4578 Marmora Road, Glasgow</li>
-                                        <li><span>Phones:</span>
-                                            <a href="tel:1-123-456-78-89">+1-123-456-78-89</a><br>
-                                            <a href="tel:1-123-456-78-80">+1-123-456-78-80</a>
+                                        <li><span>Indirizzo:</span>Camucia - via -------------</li>
+                                        <li><span>Telefono:</span>
+                                            <a href="tel:1-123-456-78-89">+1-123-456-78-89</a>
                                         </li>
                                         <li style="font-size: 12px"><span>Working Hours:</span>
                                             @foreach($orario as $giorno)
@@ -201,9 +200,8 @@
                                         </li>
                                         <li><span>Email:</span><a href="mailto:info@bigbear.com">info@bigbear.com</a>
                                         </li>
-                                        <li class="social-links"><span>Our Socials:</span>
+                                        <li class="social-links"><span>I nostri Social:</span>
                                             <a href="#" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
                                             <a href="#" class="fa fa-instagram"></a>
                                             <a href="#" class="fa fa-linkedin"></a>
                                         </li>
@@ -344,7 +342,7 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget newsletter-widget">
                                     <h6>Newsletter</h6>
-                                    <div class="text">BLACKFIT – fitness health center where your body gets its shape!
+                                    <div class="text">BODYLINE CORTONA – fitness health center where your body gets its shape!
                                         Start training now to stay fit and healthy all year round!
                                     </div>
                                     <!-- Newsletter Form -->
@@ -384,6 +382,8 @@
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 
 <!-- Purchase Popup -->
+{{--
+
 <div id="purchase-popup" class="purchase-popup">
     <div class="close-search theme-btn"><span>Close</span></div>
     <div class="popup-inner">
@@ -431,6 +431,8 @@
 
     </div>
 </div>
+
+--}}
 
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/popper.min.js')}}"></script>

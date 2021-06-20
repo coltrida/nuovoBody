@@ -2,7 +2,7 @@
 <li class="dropdown"><a href="#">Chi Siamo</a>
     <ul>
         <li><a href="about.html">Chi Siamo</a></li>
-        <li><a href="timetable.html">Programma</a></li>
+        <li><a href="{{route('calendario')}}">Programma</a></li>
         <li><a href="commingsoon.html">In Arrivo</a></li>
     </ul>
 </li>
