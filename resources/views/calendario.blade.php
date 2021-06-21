@@ -2,7 +2,7 @@
 
 @section('main')
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/5.jpg)">
+    <section id="testaCalendar" class="page-title">
         <div class="auto-container">
             <h2>Calendario Corsi</h2>
             <ul class="page-breadcrumb">
@@ -23,7 +23,7 @@
                 <div class="timing-tabs tabs-box">
 
                     <!--Tab Btns-->
-                    <ul class="tab-btns tab-buttons clearfix">
+                    <ul class="tab-btns tab-buttons clearfix text-justify">
                         <li data-tab="#prod-tutti" class="tab-btn active-btn">tutti</li>
                         @foreach($courses as $item)
                             <li data-tab="#prod-{{$item->id}}" class="tab-btn">{{$item->nome}}</li>
@@ -37,7 +37,8 @@
                         <div class="tab active-tab" id="prod-tutti">
                             <div class="content">
                                 <div class="table-image">
-                                    <table class="table table-striped table-bordered">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
                                         <thead class="table-dark">
                                         <tr>
                                             <th scope="col">#</th>
@@ -50,13 +51,17 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @for($i=9; $i<21; $i++)
+                                        @for($i=9; $i<=21; $i++)
+                                            @for($m=0; $m<=1; $m++)
+                                                @php($minuti = $m == 0 ? '00' : $m*30)
                                             <tr>
-                                                <td style="background-color: #1a202c; color: white">{{$i}}:00</td>
+                                                <td style="background-color: #1a202c; color: white">
+                                                    {{$i==9 ? '0'.$i : $i}}:{{$minuti}}
+                                                </td>
                                                 <td>
                                                     @foreach($courses as $item)
                                                         @foreach($item->calendars as $ele)
-                                                            @if($ele->giorno == 1 && $ele->oraInizio == $i)
+                                                            @if($ele->giorno == 1 && $ele->orarioformato == $i && $ele->minutiformato == $minuti )
                                                                 {{$item->nome}} <br>
                                                             @endif
                                                         @endforeach
@@ -65,7 +70,7 @@
                                                 <td>
                                                     @foreach($courses as $item)
                                                         @foreach($item->calendars as $ele)
-                                                            @if($ele->giorno == 2 && $ele->oraInizio == $i)
+                                                            @if($ele->giorno == 2 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                 {{$item->nome}} <br>
                                                             @endif
                                                         @endforeach
@@ -74,7 +79,7 @@
                                                 <td>
                                                     @foreach($courses as $item)
                                                         @foreach($item->calendars as $ele)
-                                                            @if($ele->giorno == 3 && $ele->oraInizio == $i)
+                                                            @if($ele->giorno == 3 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                 {{$item->nome}} <br>
                                                             @endif
                                                         @endforeach
@@ -83,7 +88,7 @@
                                                 <td>
                                                     @foreach($courses as $item)
                                                         @foreach($item->calendars as $ele)
-                                                            @if($ele->giorno == 4 && $ele->oraInizio == $i)
+                                                            @if($ele->giorno == 4 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                 {{$item->nome}} <br>
                                                             @endif
                                                         @endforeach
@@ -92,7 +97,7 @@
                                                 <td>
                                                     @foreach($courses as $item)
                                                         @foreach($item->calendars as $ele)
-                                                            @if($ele->giorno == 5 && $ele->oraInizio == $i)
+                                                            @if($ele->giorno == 5 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                 {{$item->nome}} <br>
                                                             @endif
                                                         @endforeach
@@ -101,7 +106,7 @@
                                                 <td>
                                                     @foreach($courses as $item)
                                                         @foreach($item->calendars as $ele)
-                                                            @if($ele->giorno == 6 && $ele->oraInizio == $i)
+                                                            @if($ele->giorno == 6 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                 {{$item->nome}} <br>
                                                             @endif
                                                         @endforeach
@@ -109,8 +114,10 @@
                                                 </td>
                                             </tr>
                                         @endfor
+                                        @endfor
                                         </tbody>
                                     </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -121,6 +128,7 @@
                                     <div class="table-image">
 
                                         {{--{{$item->calendars}}--}}
+                                        <div class="table-responsive">
                                             <table class="table table-striped table-bordered">
                                                 <thead class="table-dark">
                                                     <tr>
@@ -134,56 +142,59 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                @for($i=9; $i<21; $i++)
+                                                @for($i=9; $i<=21; $i++)
+                                                    @for($m=0; $m<=1; $m++)
+                                                        @php($minuti = $m == 0 ? '00' : $m*30)
                                                     <tr>
-                                                        <td style="background-color: #1a202c; color: white">{{$i}}:00</td>
+                                                        <td style="background-color: #1a202c; color: white">{{$i==9 ? '0'.$i : $i}}:{{$minuti}}</td>
                                                         <td>
                                                             @foreach($item->calendars as $ele)
-                                                                @if($ele->giorno == 1 && $ele->oraInizio == $i)
+                                                                @if($ele->giorno == 1 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                     {{$item->nome}}
                                                                 @endif
                                                             @endforeach
                                                         </td>
                                                         <td>
                                                             @foreach($item->calendars as $ele)
-                                                                @if($ele->giorno == 2 && $ele->oraInizio == $i)
+                                                                @if($ele->giorno == 2 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                     {{$item->nome}}
                                                                 @endif
                                                             @endforeach
                                                         </td>
                                                         <td>
                                                             @foreach($item->calendars as $ele)
-                                                                @if($ele->giorno == 3 && $ele->oraInizio == $i)
+                                                                @if($ele->giorno == 3 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                     {{$item->nome}}
                                                                 @endif
                                                             @endforeach
                                                         </td>
                                                         <td>
                                                             @foreach($item->calendars as $ele)
-                                                                @if($ele->giorno == 4 && $ele->oraInizio == $i)
+                                                                @if($ele->giorno == 4 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                     {{$item->nome}}
                                                                 @endif
                                                             @endforeach
                                                         </td>
                                                         <td>
                                                             @foreach($item->calendars as $ele)
-                                                                @if($ele->giorno == 5 && $ele->oraInizio == $i)
+                                                                @if($ele->giorno == 5 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                     {{$item->nome}}
                                                                 @endif
                                                             @endforeach
                                                         </td>
                                                         <td>
                                                             @foreach($item->calendars as $ele)
-                                                                @if($ele->giorno == 6 && $ele->oraInizio == $i)
+                                                                @if($ele->giorno == 6 && $ele->orarioformato == $i && $ele->minutiformato == $minuti)
                                                                     {{$item->nome}}
                                                                 @endif
                                                             @endforeach
                                                         </td>
                                                     </tr>
                                                 @endfor
+                                                @endfor
                                                 </tbody>
                                             </table>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>

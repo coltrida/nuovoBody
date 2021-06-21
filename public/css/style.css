@@ -8679,3 +8679,7 @@ body.visible-menu-bar .fullscreen-menu{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#testaCalendar{
+    background:url(../images/background/5.jpg);
+}

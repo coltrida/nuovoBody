@@ -28,10 +28,13 @@
                                     </select>
                                 </div>
                                 <div class="col-auto">
-                                    <select id="oraInizio" class="form-control"  name="oraInizio">
+                                    <select id="orario" class="form-control"  name="orario">
                                         <option>Seleziona Orario</option>
                                         @for($i=9; $i<22; $i++)
-                                            <option value="{{$i}}">{{$i}} : 00</option>
+                                            @for($m=0; $m<2; $m++)
+                                                @php($minuti = $m == 0 ? '00' : $m*30)
+                                                <option>{{$i}}:{{$minuti}}</option>
+                                            @endfor
                                         @endfor
                                     </select>
                                 </div>
@@ -59,7 +62,7 @@
                                         @foreach($calendars as $item)
                                             <tr>
                                                 <td>{{$item->giornosettimana}}</td>
-                                                <td>{{$item->oraInizio}}:00 - {{$item->oraInizio+1}}:00</td>
+                                                <td>{{$item->orarioformato}}:{{$item->minutiformato}} - {{$item->orarioformato + 1}}:{{$item->minutiformato}}</td>
                                                 <td>{{$item->course->nome}}</td>
                                                 <td style="text-align: center">
                                                     <a href="{{route('admin.calendar.delete', $item->id)}}">

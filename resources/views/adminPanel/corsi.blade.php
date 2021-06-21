@@ -16,7 +16,7 @@
                                 </div>
                                 <div class="col-auto">
                                     <select id="trainer" class="form-control"  name="trainer_id">
-                                        <option>Seleziona trainer</option>
+                                        <option value="{{null}}">Seleziona trainer</option>
                                         @foreach($trainers as $trainer)
                                             <option value="{{$trainer->id}}">{{$trainer->nome}} {{$trainer->cognome}}</option>
                                         @endforeach
@@ -47,7 +47,11 @@
                                             <tr>
                                                 <td>{{$item->nome}}</td>
                                                 <td>{{$item->descrizione}}</td>
-                                                <td>{{$item->trainer->nome}} {{$item->trainer->cognome}}</td>
+                                                <td>
+                                                    @if(isset($item->trainer->nome))
+                                                        {{$item->trainer->nome}} {{$item->trainer->cognome}}
+                                                    @endif
+                                                </td>
                                                 <td style="text-align: center">
                                                     <a href="{{route('admin.course.delete', $item->id)}}">
                                                         <i title="elimina" class="fas fa-trash" style="color: red"></i>

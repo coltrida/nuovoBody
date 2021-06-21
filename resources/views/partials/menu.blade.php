@@ -1,10 +1,10 @@
 <li><a href="{{route('inizio')}}">Home</a></li>
-<li class="dropdown"><a href="#">Chi Siamo</a>
-    <ul>
+<li><a href="#">Chi Siamo</a>
+    {{--<ul>
         <li><a href="about.html">Chi Siamo</a></li>
         <li><a href="{{route('calendario')}}">Programma</a></li>
         <li><a href="commingsoon.html">In Arrivo</a></li>
-    </ul>
+    </ul>--}}
 </li>
 <li class="dropdown"><a href="#">Personal Trainers</a>
     <ul>
@@ -13,23 +13,23 @@
         @endforeach
     </ul>
 </li>
-<li class="dropdown"><a href="#">Shop</a>
-    <ul>
+<li><a href="{{route('calendario')}}">Calendario</a>
+    {{--<ul>
         <li><a href="shop-left.html">Shop Left Sidebar</a></li>
         <li><a href="shop-right.html">Shop Right Sidebar</a></li>
         <li><a href="shop-single.html">Product Single</a></li>
         <li><a href="shopping-cart.html">Shopping Cart</a></li>
         <li><a href="checkout.html">Checkout</a></li>
-    </ul>
+    </ul>--}}
 </li>
-<li class="dropdown"><a href="#">Blog</a>
-    <ul>
+<li><a href="#">Notizie</a>
+    {{--<ul>
         <li><a href="blog.html">Our Blog</a></li>
         <li><a href="blog-classic.html">Blog Classic</a></li>
         <li><a href="blog-detail.html">Blog Detail One</a></li>
         <li><a href="blog-detail-two.html">Blog Detail Two</a></li>
         <li><a href="not-found.html">Not Found</a></li>
-    </ul>
+    </ul>--}}
 </li>
 <li><a href="contact.html">Contattaci</a></li>
 @guest

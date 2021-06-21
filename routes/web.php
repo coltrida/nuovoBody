@@ -32,6 +32,12 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     /*----------- foto -------------*/
     Route::get('/photos', [AuthController::class, 'photos'])->name('admin.photos');
     Route::post('photos/', [AuthController::class, 'photoAdd'])->name('admin.photo.add');
+
+    /*----------- post -------------*/
+    Route::get('/posts', [AuthController::class, 'posts'])->name('admin.posts');
+    Route::get('posts/{id}', [AuthController::class, 'postShow'])->name('admin.post.show');
+    Route::get('posts/elimina/{id}', [AuthController::class, 'postDelete'])->name('admin.post.delete');
+    Route::post('posts/', [AuthController::class, 'postAdd'])->name('admin.post.add');
 });
 
 

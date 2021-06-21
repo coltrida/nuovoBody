@@ -37,7 +37,8 @@ class Hour extends Model
     protected $table = 'houres';
     protected $guarded = [];
 
-    public function getGiornosettimanaAttribute(){
+    public function getGiornosettimanaAttribute()
+    {
         $giorno = '';
         switch ($this->giorno) {
             case 1:
@@ -57,6 +58,33 @@ class Hour extends Model
                 break;
             case 6:
                 $giorno = 'Sabato';
+                break;
+        }
+
+        return $giorno;
+    }
+
+    public function getGiornosettimanabreveAttribute()
+    {
+        $giorno = '';
+        switch ($this->giorno) {
+            case 1:
+                $giorno = 'LU';
+                break;
+            case 2:
+                $giorno = 'MA';
+                break;
+            case 3:
+                $giorno = 'ME';
+                break;
+            case 4:
+                $giorno = 'GI';
+                break;
+            case 5:
+                $giorno = 'VE';
+                break;
+            case 6:
+                $giorno = 'SA';
                 break;
         }
 

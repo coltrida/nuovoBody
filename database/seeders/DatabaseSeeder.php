@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CourseSeeder::class,
             TrainerSeeder::class,
-            HourSeeder::class
+            HourSeeder::class,
+            CalendarSeeder::class
         ]);
 
     }

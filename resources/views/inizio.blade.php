@@ -12,10 +12,10 @@
                     <div class="content-boxed">
                         <div class="inner-boxed">
                             <h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-                            <div class="text">BODYLINE CORTONA – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
-                            <div class="btns-box">
+                            <div class="text">BODYLINE CORTONA – Centro fitness per il benessere fisico e mentale! <br> Comincia ad allenarti adesso per restare in forma tutto l'anno!</div>
+                            {{--<div class="btns-box">
                                 <div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -29,10 +29,10 @@
                     <div class="content-boxed">
                         <div class="inner-boxed">
                             <h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-                            <div class="text">BODYLINE CORTONA – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
-                            <div class="btns-box">
+                            <div class="text">BODYLINE CORTONA – Centro fitness dove il tuo corpo tornerà in forma! <br> Fissare degli obiettivi è il primo passo per trasformare l’invisibile in visibile!</div>
+                            {{--<div class="btns-box">
                                 <div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -46,10 +46,10 @@
                     <div class="content-boxed">
                         <div class="inner-boxed">
                             <h1>KEEP YOUR BODY <span>FIT & STRONG</span></h1>
-                            <div class="text">BODYLINE CORTONA – fitness health center where your body gets its shape! <br> Start training now to stay fit and healthy all year round!</div>
-                            <div class="btns-box">
+                            <div class="text">BODYLINE CORTONA – Vieni a trovarci! <br> La voglia di vincere non è nemmeno lontanamente così importante come la voglia di prepararsi a vincere!</div>
+                            {{--<div class="btns-box">
                                 <div class="theme-btn purchase-box-btn btn-style-one"><span class="txt">LET’S TRAIN</span></div>
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,10 @@
                 <!-- Testimonial Block -->
                 <div class="testimonial-block">
                     <div class="inner-box">
-                        <div class="text">Want to be healthy and have a perfect body? BODYLINE CORTONA is the right decision for you! It will create your personal training program and balance your diet so you could get the <br> shape of your dream shortly!</div>
+                        <div class="text">
+                            Il bodybuilding non è solo uno sport, è uno stile di vita. Se ogni aspetto della tua esistenza non è focalizzato sulla realizzazione dei sacrifici necessari per costruire il tuo fisico migliore, alla fine fallirai e non raggiungerai mai il tuo pieno potenziale.
+                            <br> <i>Robert Cheeke</i>
+                        </div>
                     </div>
                 </div>
 
@@ -100,7 +103,7 @@
                             <div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <h4><a href="body-builder.html">FITNESS</a></h4>
+                                        <h4><a href="#">FITNESS</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +121,7 @@
                             <div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <h4><a href="body-builder.html">BODYBUILDING</a></h4>
+                                        <h4><a href="#">BODYBUILDING</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +139,7 @@
                             <div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <h4><a href="body-builder.html">CROSSFIT</a></h4>
+                                        <h4><a href="#">CROSSFIT</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +158,7 @@
                             <div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <h4><a href="body-builder.html">CARDIO</a></h4>
+                                        <h4><a href="#">CARDIO</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +177,9 @@
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2><span>WHO</span> We Are</h2>
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. <br> Risus commodo viverra maecenas accumsan lacus vel facilisis</div>
+                <div class="text">
+                    Siamo un gruppo di appassionati, amanti del fitness! <br> Impossibile non è un dato di fatto, è un parere. Impossibile non è una dichiarazione è una sfida, impossibile è teorico, impossibile è temporaneo, impossibile non esiste è nulla.
+                </div>
             </div>
 
             <!--Video Box-->
@@ -204,12 +209,17 @@
                     <div class="inner-box">
                         <div class="image">
                             <img src="{{asset('images/gallery/1.jpg')}}" alt="" />
-                            <a class="overlay-link" href="images/gallery/gallery1.jpg" data-fancybox="images" data-caption=""></a>
+                            <a class="overlay-link" href="{{asset('images/gallery/1.jpg')}}" data-fancybox="images1" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
+                                {{--<div class="overlay-inner">
+                                    <div class="content">
+                                        <a class="plus" href="{{asset('images/gallery/1.jpg')}}" data-fancybox="images1" data-caption=""></a>
+                                    </div>
+                                </div>--}}
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <a class="plus" href="images/gallery/gallery1.jpg" data-fancybox="images" data-caption=""></a>
+                                        <a class="plus" href="{{asset('images/gallery/2.jpg')}}" data-fancybox="images1" data-caption=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -222,12 +232,12 @@
                     <div class="inner-box">
                         <div class="image">
                             <img src="{{asset('images/gallery/2.jpg')}}" alt="" />
-                            <a class="overlay-link" href="images/gallery/gallery2.jpg" data-fancybox="images" data-caption=""></a>
+                            <a class="overlay-link" href="{{asset('images/gallery/2.jpg')}}" data-fancybox="images" data-caption=""></a>
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <a class="plus" href="images/gallery/gallery2.jpg" data-fancybox="images" data-caption=""></a>
+                                        <a class="plus" href="{{asset('images/gallery/2.jpg')}}" data-fancybox="images" data-caption=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -565,7 +575,7 @@
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2><span>I nostri</span> Trainers</h2>
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
+{{--                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>--}}
             </div>
         </div>
 
@@ -590,7 +600,7 @@
                                 <a href="trainer.html" class="overlay-link-two"></a>
                                 <div class="content">
                                     <h5><a href="blog-detail.html">{{$item->nome}} <br> {{$item->cognome}}</a></h5>
-                                    <div class="text">{{$item->descrizione}}</div>
+                                    <div class="text" style="font-size: 12px; text-align:justify ">{{$item->descrizione}}</div>
                                     <!-- Social Box -->
                                     {{--<div class="social-box">
                                         <a href="#" class="fa fa-facebook"></a>
@@ -840,7 +850,7 @@
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2><span>COSA DICONO </span><br>I NOSTRI CLIENTI</h2>
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
+{{--                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>--}}
             </div>
 
             <div class="testimonial-outer">
@@ -850,7 +860,7 @@
                 <div class="client-thumb-outer">
                     <div class="client-thumbs-carousel owl-carousel owl-theme">
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="{{asset('images/resource/author-1.jpg')}}" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{asset('images/resource/author-4.jpg')}}" alt=""></figure>
                         </div>
                         <div class="thumb-item">
                             <figure class="thumb-box"><img src="{{asset('images/resource/author-2.jpg')}}" alt=""></figure>
@@ -859,7 +869,7 @@
                             <figure class="thumb-box"><img src="{{asset('images/resource/author-3.jpg')}}" alt=""></figure>
                         </div>
                         <div class="thumb-item">
-                            <figure class="thumb-box"><img src="{{asset('images/resource/author-4.jpg')}}" alt=""></figure>
+                            <figure class="thumb-box"><img src="{{asset('images/resource/author-1.jpg')}}" alt=""></figure>
                         </div>
                         <div class="thumb-item">
                             <figure class="thumb-box"><img src="{{asset('images/resource/author-5.jpg')}}" alt=""></figure>
@@ -878,10 +888,10 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“Volevo più tonicità e...BODYLINE CORTONA me l'ha fatta ottenere! Grazie!”</div>
                             <div class="author-info">
-                                <div class="author-name">Samantha Green</div>
-                                <div class="designation">CEO of Company</div>
+{{--                                <div class="author-name">Luisa</div>--}}
+{{--                                <div class="designation">CEO of Company</div>--}}
                             </div>
                         </div>
                     </div>
@@ -891,10 +901,10 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“grazie BODYLINE CORTONA sono arrivata alla forma che volevo! Grazie di cuore!”</div>
                             <div class="author-info">
-                                <div class="author-name">Samantha Green</div>
-                                <div class="designation">CEO of Company</div>
+{{--                                <div class="author-name">Vivien</div>--}}
+{{--                                <div class="designation">CEO of Company</div>--}}
                             </div>
                         </div>
                     </div>
@@ -904,10 +914,10 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“All'inizio non avevo la giusta volontà, ma grazie ai trainers ho trovato le giuste motivazioni! Grazie BODYLINE CORTONA!”</div>
                             <div class="author-info">
-                                <div class="author-name">Samantha Green</div>
-                                <div class="designation">CEO of Company</div>
+{{--                                <div class="author-name">Jacqueline</div>--}}
+{{--                                <div class="designation">CEO of Company</div>--}}
                             </div>
                         </div>
                     </div>
@@ -917,10 +927,10 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“BODYLINE CORTONA mi ha fatto ritornare in palestra con il sorriso e la voglia di migliorare! Ho mangiato pulito e ascoltato i consigli dei trainer!”</div>
                             <div class="author-info">
-                                <div class="author-name">Samantha Green</div>
-                                <div class="designation">CEO of Company</div>
+{{--                                <div class="author-name">Davide</div>--}}
+{{--                                <div class="designation">CEO of Company</div>--}}
                             </div>
                         </div>
                     </div>
@@ -930,10 +940,10 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“BODYLINE CORTONA mi ha seguito e mi ha fatto divertire con i suoi corsi, intensi ma coinvolgenti! Sono felicissima dei risultati”</div>
                             <div class="author-info">
-                                <div class="author-name">Samantha Green</div>
-                                <div class="designation">CEO of Company</div>
+{{--                                <div class="author-name">Sara</div>--}}
+{{--                                <div class="designation">CEO of Company</div>--}}
                             </div>
                         </div>
                     </div>
@@ -943,10 +953,10 @@
                         <div class="inner-box">
                             <span class="quote-left flaticon-quote-3"></span>
                             <span class="quote-right flaticon-quote-4"></span>
-                            <div class="text">“BODYLINE CORTONA’s 90 day challenge put me back in the gym on a consistent basis. I eat clean and listen to the advice of coach on every workout”</div>
+                            <div class="text">“Ho scoperto BODYLINE CORTONA da poco e mi sono innamorata dei suoi corsi!”</div>
                             <div class="author-info">
-                                <div class="author-name">Samantha Green</div>
-                                <div class="designation">CEO of Company</div>
+{{--                                <div class="author-name">Roberta</div>--}}
+{{--                                <div class="designation">CEO of Company</div>--}}
                             </div>
                         </div>
                     </div>

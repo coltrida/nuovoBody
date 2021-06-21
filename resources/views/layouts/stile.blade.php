@@ -181,11 +181,13 @@
                                                                   title=""></a>
                                     </div>
                                     <ul class="info-list">
-                                        <li><span>Indirizzo:</span>Camucia - via -------------</li>
+                                        <li><span></span>BODY LINE s.n.c. <br>di Castellani e Moretti</li>
+                                        <li><span>Indirizzo:</span>Nuova variante ex SS 71 <br>Loc. Camucia - Cortona (AR)</li>
+                                        <li><span>partita IVA:</span>01639380516</li>
                                         <li><span>Telefono:</span>
                                             <a href="tel:1-123-456-78-89">+1-123-456-78-89</a>
                                         </li>
-                                        <li style="font-size: 12px"><span>Working Hours:</span>
+                                        {{--<li style="font-size: 12px"><span>Working Hours:</span>
                                             @foreach($orario as $giorno)
                                                 <div class="row">
                                                     <div class="col">{{$giorno->giornosettimana}}</div>
@@ -197,14 +199,10 @@
                                                     </div>
                                                 </div>
                                             @endforeach
+                                        </li>--}}
+                                        <li><span>Email:</span><a href="mailto:nuvolefumo@gmail.com">nuvolefumo@gmail.com</a>
                                         </li>
-                                        <li><span>Email:</span><a href="mailto:info@bigbear.com">info@bigbear.com</a>
-                                        </li>
-                                        <li class="social-links"><span>I nostri Social:</span>
-                                            <a href="#" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-instagram"></a>
-                                            <a href="#" class="fa fa-linkedin"></a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -256,8 +254,35 @@
                             <!-- Footer Column -->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget gallery-widget">
-                                    <h6>Instagram</h6>
+                                    <h6>Orario</h6>
                                     <div class="widget-content">
+
+                                        <ul class="info-list">
+                                            <li style="font-size: 10px; color: white">
+                                                @foreach($orario as $giorno)
+                                                    <div class="row">
+                                                        <div class="col-2">{{$giorno->giornosettimanabreve}}</div>
+                                                        <div class="col-4">{{$giorno->oraMattinoInizio}}/{{$giorno->oraMattinoFine}}</div>
+                                                        <div class="col-4">
+                                                            @if(isset($giorno->oraPomeriggioInizio))
+                                                                {{$giorno->oraPomeriggioInizio}}/{{$giorno->oraPomeriggioFine}}
+                                                            @endif
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+                                            </li>
+
+                                            <li class="social-links mt-3 text-white" ><span>I nostri Social:</span><br>
+                                                <a href="#" class="fa fa-facebook text-white"></a>
+                                                <a href="#" class="fa fa-instagram text-white"></a>
+                                                <a href="#" class="fa fa-linkedin text-white"></a>
+                                            </li>
+
+                                            <li class="social-links mt-3 text-white">
+                                                <a href="#">Informativa Privacy</a>
+                                            </li>
+                                        </ul>
+                                       {{--
 
                                         <div class="images-outer clearfix">
                                             <!--Image Box-->
@@ -333,7 +358,7 @@
                                                         src="{{asset('images/gallery/footer-gallery-thumb-9.jpg')}}"
                                                         alt=""></a></figure>
                                         </div>
-
+--}}
                                     </div>
                                 </div>
                             </div>

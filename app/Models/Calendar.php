@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -33,6 +34,28 @@ class Calendar extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function getOrarioformatoAttribute()
+    {
+        return Carbon::parse($this->orario)->hour;
+    }
+
+    public function getMinutiformatoAttribute()
+    {
+        return Carbon::parse($this->orario)->minute == 0 ? '00' : Carbon::parse($this->orario)->minute;
+    }
+
+    /*public function getOrariofineAttribute()
+    {
+        $ora = $this->getOrarioformatoAttribute();
+        if ($this->getMinutiformatoAttribute() == '00'){
+            $minuti = '30';
+        } else {
+            $ora++;
+            $minuti = '00';
+        }
+        return $ora.':'.$minuti;
+    }*/
 
     public function getGiornosettimanaAttribute(){
         $giorno = '';

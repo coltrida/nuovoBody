@@ -25,7 +25,7 @@ class CalendarRequest extends FormRequest
     {
         return [
             'giorno' => 'required',
-            'oraInizio' => 'required',
+            'orario' => 'required',
             'course_id' => 'required'
         ];
     }
