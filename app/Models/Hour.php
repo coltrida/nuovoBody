@@ -29,6 +29,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Hour whereOraPomeriggioInizio($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Hour whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read mixed $giornosettimanabreve
  */
 class Hour extends Model
 {

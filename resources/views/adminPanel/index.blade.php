@@ -85,6 +85,12 @@
                     <span>Foto</span></a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('admin.posts')}}">
+                    <i class="fas fa-fw fa-images"></i>
+                    <span>Notizie</span></a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 

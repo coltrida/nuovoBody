@@ -6,7 +6,7 @@
         <div class="auto-container">
             <h2>Calendario Corsi</h2>
             <ul class="page-breadcrumb">
-                <li><a href="index.html">home</a></li>
+                <li><a href="{{route('inizio')}}">home</a></li>
                 <li>Calendario Corsi</li>
             </ul>
         </div>

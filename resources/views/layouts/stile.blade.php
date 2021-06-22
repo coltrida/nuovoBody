@@ -185,7 +185,7 @@
                                         <li><span>Indirizzo:</span>Nuova variante ex SS 71 <br>Loc. Camucia - Cortona (AR)</li>
                                         <li><span>partita IVA:</span>01639380516</li>
                                         <li><span>Telefono:</span>
-                                            <a href="tel:1-123-456-78-89">+1-123-456-78-89</a>
+                                            <a href="tel:3387955788">3387955788</a>
                                         </li>
                                         {{--<li style="font-size: 12px"><span>Working Hours:</span>
                                             @foreach($orario as $giorno)
@@ -367,8 +367,8 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget newsletter-widget">
                                     <h6>Newsletter</h6>
-                                    <div class="text">BODYLINE CORTONA – fitness health center where your body gets its shape!
-                                        Start training now to stay fit and healthy all year round!
+                                    <div class="text">BODYLINE CORTONA – centro benessere e fitness dove il tuo corpo ritrova la sua forma!
+                                        Comincia ad allenarti adesso "to stay fit and healthy" tutto l'anno!
                                     </div>
                                     <!-- Newsletter Form -->
                                     <div class="newsletter-form">

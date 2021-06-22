@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Services\CourseService;
 use App\Services\HourService;
+use App\Services\PostService;
 use App\Services\TrainerService;
 use Illuminate\Http\Request;
 use function compact;
@@ -11,18 +12,33 @@ use function view;
 
 class FrontController extends Controller
 {
-    public function index(TrainerService $trainerService, HourService $hourService)
+    public function index()
     {
-        $trainers = $trainerService->index();
-        $orario = $hourService->index();
-        return view('inizio', compact('trainers', 'orario'));
+        return view('inizio');
     }
 
-    public function calendario(TrainerService $trainerService, HourService $hourService, CourseService $courseService)
+    public function calendario(CourseService $courseService)
     {
-        $trainers = $trainerService->index();
-        $orario = $hourService->index();
         $courses = $courseService->listaCorsiConCalendario();
-        return view('calendario', compact('trainers', 'orario', 'courses'));
+        return view('calendario', compact('courses'));
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function notizie(PostService $postService)
+    {
+        $inEvidenza = $postService->inEvidenza();
+        $posts = $postService->lista();
+        return view('posts', compact('inEvidenza', 'posts'));
+    }
+
+    public function notizia($id, PostService $postService)
+    {
+        $inEvidenza = $postService->inEvidenza();
+        $post = $postService->show($id);
+        return view('post', compact('inEvidenza', 'post'));
     }
 }

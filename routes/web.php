@@ -6,6 +6,9 @@ use App\Http\Controllers\FrontController;
 
 Route::get('/', [FrontController::class, 'index'])->name('inizio');
 Route::get('/calendario', [FrontController::class, 'calendario'])->name('calendario');
+Route::get('/about', [FrontController::class, 'about'])->name('about');
+Route::get('/notizie', [FrontController::class, 'notizie'])->name('notizie');
+Route::get('/notizie/{id}', [FrontController::class, 'notizia'])->name('notizia');
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/', [AuthController::class, 'index'])->name('admin.index');

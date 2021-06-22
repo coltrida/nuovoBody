@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CalendarRequest;
 use App\Http\Requests\CourseRequest;
-use App\Http\Requests\PostRequest;
 use App\Http\Requests\TrainserRequest;
 use App\Services\CalendarService;
 use App\Services\CourseService;
@@ -109,7 +108,7 @@ class AuthController extends Controller
     public function posts(PostService $postService)
     {
         $posts = $postService->index();
-        return view('adminPanel.posts', compact('posts'));
+        return view('adminPanel.notizie', compact('posts'));
     }
 
     public function postDelete($id, PostService $postService)
@@ -124,7 +123,7 @@ class AuthController extends Controller
         return redirect()->back();
     }
 
-    public function postAdd(PostRequest $request, PostService $postService)
+    public function postAdd(Request $request, PostService $postService)
     {
         $postService->aggiungi($request);
         return redirect()->back();

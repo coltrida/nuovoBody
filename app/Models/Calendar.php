@@ -28,6 +28,12 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \App\Models\Course $corso
  * @property-read \App\Models\Course $course
  * @property-read mixed $giornosettimana
+ * @property string $orario
+ * @property int|null $mezza
+ * @property-read mixed $minutiformato
+ * @property-read mixed $orarioformato
+ * @method static \Illuminate\Database\Eloquent\Builder|Calendar whereMezza($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Calendar whereOrario($value)
  */
 class Calendar extends Model
 {

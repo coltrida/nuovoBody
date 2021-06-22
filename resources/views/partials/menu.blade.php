@@ -1,5 +1,5 @@
 <li><a href="{{route('inizio')}}">Home</a></li>
-<li><a href="#">Chi Siamo</a>
+<li><a href="{{route('about')}}">Chi Siamo</a>
     {{--<ul>
         <li><a href="about.html">Chi Siamo</a></li>
         <li><a href="{{route('calendario')}}">Programma</a></li>
@@ -22,7 +22,7 @@
         <li><a href="checkout.html">Checkout</a></li>
     </ul>--}}
 </li>
-<li><a href="#">Notizie</a>
+<li><a href="{{route('notizie')}}">Notizie</a>
     {{--<ul>
         <li><a href="blog.html">Our Blog</a></li>
         <li><a href="blog-classic.html">Blog Classic</a></li>
