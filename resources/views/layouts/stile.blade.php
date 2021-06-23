@@ -254,13 +254,13 @@
                         <div class="row clearfix">
 
                             <!-- Footer Column -->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-column col-lg-12 col-md-12 col-sm-12">
                                 <div class="footer-widget gallery-widget">
                                     <h6>Orario</h6>
                                     <div class="widget-content">
 
                                         <ul class="info-list">
-                                            <li style="font-size: 10px; color: white">
+                                            <li style="font-size: 14px; color: white">
                                                 @foreach($orario as $giorno)
                                                     <div class="row">
                                                         <div class="col-2">{{$giorno->giornosettimanabreve}}</div>
@@ -366,7 +366,7 @@
                             </div>
 
                             <!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                            {{--<div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget newsletter-widget">
                                     <h6>Newsletter</h6>
                                     <div class="text">BODYLINE CORTONA – centro benessere e fitness dove il tuo corpo ritrova la sua forma!
@@ -386,7 +386,7 @@
                                     </div>
 
                                 </div>
-                            </div>
+                            </div>--}}
 
                         </div>
                     </div>

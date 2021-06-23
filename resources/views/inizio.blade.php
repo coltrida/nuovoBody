@@ -275,71 +275,156 @@
     <section id="priceSection" class="pricing-section">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2><span>Program</span> Pricing</h2>
+                <h2><span>LISTINO</span> PREZZI</h2>
             </div>
             <div class="row clearfix">
 
                 <!-- Pricing Block -->
                 <div class="price-block col-lg-4 col-md-4 col-sm-12">
-                    <div class="side-text">STANDART</div>
+                    <div class="side-text">MENSILE</div>
                     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="icon-box">
                             <span class="icon"><img src="{{asset('images/icons/price-1-icon.svg')}}" alt="" /></span>
                         </div>
                         <ul class="price-list">
-                            <li class="hide">Membership Card</li>
-                            <li>Health and Fitness Tips</li>
-                            <li>Personal Health Solution</li>
-                            <li>Diet Plan Included</li>
-                            <li class="hide">6 Days a Week</li>
-                            <li class="hide">Zumba Classes</li>
+                            <li>31 giorni</li>
                         </ul>
-                        <div class="price">$100<span>Per Month</span></div>
-                        <div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">PURCHASE NOW</span></div>
+                        <div class="price">€ 70<span>Al Mese</span></div>
                     </div>
                 </div>
 
                 <!-- Pricing Block -->
                 <div class="price-block col-lg-4 col-md-4 col-sm-12">
-                    <div class="side-text">PROFESSIONAL</div>
+                    <div class="side-text">2 MESI</div>
                     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="icon-box">
                             <span class="icon"><img src="{{asset('images/icons/price-2-icon.svg')}}" alt="" /></span>
                         </div>
                         <ul class="price-list">
-                            <li>Membership Card</li>
-                            <li>Health and Fitness Tips</li>
-                            <li>Personal Health Solution</li>
-                            <li>Diet Plan Included</li>
-                            <li class="hide">6 Days a Week</li>
-                            <li class="hide">Zumba Classes</li>
+                            <li> € 65 MENSILI X 2</li>
                         </ul>
-                        <div class="price">$150<span>Per Month</span></div>
-                        <div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">PURCHASE NOW</span></div>
+                        <div class="price">$ 130<span>Ogni 2 Mesi</span></div>
                     </div>
                 </div>
 
                 <!-- Pricing Block -->
                 <div class="price-block col-lg-4 col-md-4 col-sm-12">
-                    <div class="side-text">ULTIMATE</div>
+                    <div class="side-text">3 MESI</div>
                     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="icon-box">
                             <span class="icon"><img src="{{asset('images/icons/price-3-icon.svg')}}" alt="" /></span>
                         </div>
                         <ul class="price-list">
-                            <li>Membership Card</li>
-                            <li>Health and Fitness Tips</li>
-                            <li>Personal Health Solution</li>
-                            <li>Diet Plan Included</li>
-                            <li>6 Days a Week</li>
-                            <li>Zumba Classes</li>
+                            <li> € 60 MENSILI X 3</li>
                         </ul>
-                        <div class="price">$200<span>Per Month</span></div>
-                        <div class="theme-btn btn-style-one purchase-box-btn"><span class="txt">PURCHASE NOW</span></div>
+                        <div class="price">$ 180<span>Ogni 3 Mesi</span></div>
                     </div>
                 </div>
 
             </div>
+
+            <div class="row clearfix">
+
+                <!-- Pricing Block -->
+                <div class="price-block col-lg-4 col-md-4 col-sm-12">
+                    <div class="side-text">6 MESI</div>
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon"><img src="{{asset('images/icons/price-1-icon.svg')}}" alt="" /></span>
+                        </div>
+                        <ul class="price-list">
+                            <li>€ 55 MENSILI X 6</li>
+                        </ul>
+                        <div class="price">€ 330<span>Ogni 6 Mesi</span></div>
+                    </div>
+                </div>
+
+                <!-- Pricing Block -->
+                <div class="price-block col-lg-4 col-md-4 col-sm-12">
+                    <div class="side-text">12 MESI</div>
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon"><img src="{{asset('images/icons/price-2-icon.svg')}}" alt="" /></span>
+                        </div>
+                        <ul class="price-list">
+                            <li> € 45 MENSILI X 12</li>
+                        </ul>
+                        <div class="price">$ 540<span>Ogni 12 Mesi</span></div>
+                    </div>
+                </div>
+
+                <!-- Pricing Block -->
+                <div class="price-block col-lg-4 col-md-4 col-sm-12">
+                    <div class="side-text">SINGOLO ING.</div>
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon"><img src="{{asset('images/icons/price-3-icon.svg')}}" alt="" /></span>
+                        </div>
+                        <ul class="price-list">
+                            <li>INGRESSO SINGOLO</li>
+                        </ul>
+                        <div class="price">$ 10<span>&nbsp;</span></div>
+                    </div>
+                </div>
+
+            </div>
+{{--
+            <div class="row clearfix">
+
+                <!-- Pricing Block -->
+                <div class="price-block col col-sm-12 py-0">
+                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="price-list">
+                            <li style="font-size: 14px; text-align: justify">
+                                35 euro mensili da corrispondere alla palestra per l'uso dei locali e 20 euro per ogni seduta con il personal. Ingresso vincolato ai soli appuntamenti personal
+                            </li>
+                        </ul>
+                        <div class="price"><span>Solo con Personal</span></div>
+                    </div>
+                </div>
+
+                <!-- Pricing Block -->
+                <div class="price-block col col-sm-12 py-0">
+                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="price-list">
+                            <li> € 45 MENSILI X 12</li>
+                        </ul>
+                        <div class="price">$ 540<span>Ogni 12 Mesi</span></div>
+                    </div>
+                </div>
+
+                <!-- Pricing Block -->
+                <div class="price-block col col-sm-12 py-0">
+                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="price-list">
+                            <li>INGRESSO SINGOLO</li>
+                        </ul>
+                        <div class="price">$ 10<span>&nbsp;</span></div>
+                    </div>
+                </div>
+
+                <!-- Pricing Block -->
+                <div class="price-block col col-sm-12 py-0">
+                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="price-list">
+                            <li>INGRESSO SINGOLO</li>
+                        </ul>
+                        <div class="price">$ 10<span>&nbsp;</span></div>
+                    </div>
+                </div>
+
+                <!-- Pricing Block -->
+                <div class="price-block col col-sm-12 py-0">
+                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="price-list">
+                            <li>INGRESSO SINGOLO</li>
+                        </ul>
+                        <div class="price">$ 10<span>&nbsp;</span></div>
+                    </div>
+                </div>
+
+            </div>
+            --}}
         </div>
     </section>
     <!-- End Pricing Section -->
