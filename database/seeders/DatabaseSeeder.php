@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
             CourseSeeder::class,
             TrainerSeeder::class,
             HourSeeder::class,
-            CalendarSeeder::class
+            CalendarSeeder::class,
+            PostSeeder::class
         ]);
 
     }

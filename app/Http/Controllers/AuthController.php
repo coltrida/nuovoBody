@@ -80,11 +80,28 @@ class AuthController extends Controller
         return redirect()->back();
     }
 
-    public function photos(PhotoService $photoService)
+    public function photosMain(PhotoService $photoService)
     {
-        $firstMain = $photoService->firstMain();
-        $secondMain = $photoService->secondMain();
-        return view('adminPanel.photos', compact('firstMain', 'secondMain'));
+        $photos = $photoService->firstMain();
+        $slotDisponibili = $photoService->slotDisponibili('main');
+        $nomeSezione = 'Slide Principale';
+        return view('adminPanel.photos', compact('photos', 'slotDisponibili', 'nomeSezione'));
+    }
+
+    public function photosSecond(PhotoService $photoService)
+    {
+        $photos = $photoService->secondMain();
+        $slotDisponibili = $photoService->slotDisponibili('second');
+        $nomeSezione = 'Slide Secondario';
+        return view('adminPanel.photos', compact('photos', 'slotDisponibili', 'nomeSezione'));
+    }
+
+    public function photosActivities($numero, PhotoService $photoService)
+    {
+        $photos = $photoService->activities($numero);
+        $slotDisponibili = $photoService->slotDisponibili($numero);
+        $nomeSezione = 'Attività sezione '.$numero;
+        return view('adminPanel.photos', compact('photos', 'slotDisponibili', 'nomeSezione'));
     }
 
     public function photoAdd(Request $request, PhotoService $photoService)
@@ -107,8 +124,9 @@ class AuthController extends Controller
 
     public function posts(PostService $postService)
     {
-        $posts = $postService->index();
-        return view('adminPanel.notizie', compact('posts'));
+        $postsNonInEvidenza = $postService->nonInEvidenza();
+        $postsInEvidenza = $postService->inEvidenza();
+        return view('adminPanel.notizie', compact('postsNonInEvidenza', 'postsInEvidenza'));
     }
 
     public function postDelete($id, PostService $postService)
@@ -126,6 +144,12 @@ class AuthController extends Controller
     public function postAdd(Request $request, PostService $postService)
     {
         $postService->aggiungi($request);
+        return redirect()->back();
+    }
+
+    public function postEvidenza($id, PostService $postService)
+    {
+        $postService->evidenza($id);
         return redirect()->back();
     }
 }

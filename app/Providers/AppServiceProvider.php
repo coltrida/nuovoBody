@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\Hour;
 use App\Models\Trainer;
 use App\Services\HourService;
+use App\Services\PostService;
 use App\Services\TrainerService;
 use Illuminate\Support\ServiceProvider;
 use function view;
@@ -26,15 +27,17 @@ class AppServiceProvider extends ServiceProvider
      *
      * @param TrainerService $trainerService
      * @param HourService $hourService
+     * @param PostService $postService
      * @return void
      */
-    public function boot(TrainerService $trainerService, HourService $hourService)
+    public function boot(TrainerService $trainerService, HourService $hourService, PostService $postService)
     {
-        view()->composer('*', function ($view) use ($trainerService, $hourService)
+        view()->composer('*', function ($view) use ($trainerService, $hourService, $postService)
         {
             $trainers = $trainerService->index();
             $orario = $hourService->index();
-            $view->with('trainers', $trainers)->with('orario', $orario);
+            $inEvidenza = $postService->inEvidenza();
+            $view->with('trainers', $trainers)->with('orario', $orario)->with('inEvidenza', $inEvidenza);
         });
     }
 }

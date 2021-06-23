@@ -36,8 +36,8 @@
 
                                     @foreach($inEvidenza as $item)
                                     <div class="post">
-                                        <div class="thumb"><a href="#"><img src="{{asset($item->path)}}" alt=""></a></div>
-                                        <h5><a href="#">{{$item->titolo}}</a></h5>
+                                        <div class="thumb"><a href="{{route('notizia', $item->id)}}"><img src="{{asset($item->path)}}" alt=""></a></div>
+                                        <h5><a href="{{route('notizia', $item->id)}}">{{$item->titolo}}</a></h5>
                                         <span class="date">{{$item->created_at->format('d M Y')}}</span>
                                     </div>
                                     @endforeach

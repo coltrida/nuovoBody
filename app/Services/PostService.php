@@ -9,9 +9,14 @@ use function dd;
 
 class PostService
 {
-    public function index()
+    public function nonInEvidenza()
     {
-        return Post::latest()->simplePaginate(10);
+        return Post::whereNull('evidenza')->latest()->simplePaginate(5);
+    }
+
+    public function ultimeQuattro()
+    {
+        return Post::latest()->take(4)->get();
     }
 
     public function lista()
@@ -27,6 +32,17 @@ class PostService
     public function show($id)
     {
         return Post::find($id);
+    }
+
+    public function evidenza($id)
+    {
+        $post = Post::find($id);
+        if ($post->evidenza == 1){
+            $post->evidenza = null;
+        } else {
+            $post->evidenza = 1;
+        }
+        $post->save();
     }
 
     public function elimina($id)

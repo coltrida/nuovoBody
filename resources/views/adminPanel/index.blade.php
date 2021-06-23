@@ -80,9 +80,16 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{route('admin.photos')}}">
+                <a class="nav-link dropdown">
                     <i class="fas fa-fw fa-images"></i>
                     <span>Foto</span></a>
+                <ul >
+                    <li><a class="nav-link m-0 p-0" href="{{route('admin.photos.main')}}">Slide Principale</a></li>
+                    <li><a class="nav-link m-0 p-0" href="{{route('admin.photos.second')}}">Slide Secondaria</a></li>
+                    @for($i=1; $i<9; $i++)
+                        <li><a class="nav-link m-0 p-0" href="{{route('admin.photos.activities', $i)}}">Attività {{$i}}° blocco</a></li>
+                    @endfor
+                </ul>
             </li>
 
             <li class="nav-item">

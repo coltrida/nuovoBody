@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Services\CourseService;
 use App\Services\HourService;
+use App\Services\PhotoService;
 use App\Services\PostService;
 use App\Services\TrainerService;
 use Illuminate\Http\Request;
@@ -12,9 +13,20 @@ use function view;
 
 class FrontController extends Controller
 {
-    public function index()
+    public function index(PostService $postService, PhotoService $photoService)
     {
-        return view('inizio');
+        $ultimeNotizie = $postService->ultimeQuattro();
+        $photosPrimo = $photoService->activities(1);
+        $photosSecondo = $photoService->activities(2);
+        $photosTerzo = $photoService->activities(3);
+        $photosQuarto = $photoService->activities(4);
+        $photosQuinto = $photoService->activities(5);
+        $photosSesto = $photoService->activities(6);
+        $photosSettimo = $photoService->activities(7);
+        $photosOttavo= $photoService->activities(8);
+        return view('inizio', compact('ultimeNotizie',
+            'photosPrimo', 'photosSecondo', 'photosTerzo', 'photosQuarto', 'photosQuinto',
+                'photosSesto', 'photosSettimo', 'photosOttavo'));
     }
 
     public function calendario(CourseService $courseService)

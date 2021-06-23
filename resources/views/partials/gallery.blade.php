@@ -7,20 +7,18 @@
             <div class="gallery-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="{{asset('images/gallery/1.jpg')}}" alt=""/>
-                        <a class="overlay-link" href="{{asset('images/gallery/1.jpg')}}" data-fancybox="images1"
+                        <img style="height: 300px; object-fit: cover" src="{{asset('storage/'.$photosPrimo[0])}}" alt=""/>
+                        <a class="overlay-link" href="{{asset('storage/'.$photosPrimo[0])}}" data-fancybox="images1"
                            data-caption=""></a>
                         <!-- Overlay Box -->
                         <div class="overlay-box">
-                            {{--<div class="overlay-inner">
-                                <div class="content">
-                                    <a class="plus" href="{{asset('images/gallery/1.jpg')}}" data-fancybox="images1" data-caption=""></a>
-                                </div>
-                            </div>--}}
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a class="plus" href="{{asset('images/gallery/2.jpg')}}" data-fancybox="images1"
+                                    @for($i = 1; $i < count($photosPrimo); $i++ )
+                                    <a  href="{{asset('storage/'.$photosPrimo[$i])}}" data-fancybox="images1"
                                        data-caption=""></a>
+                                    @endfor
+                                    <h4 style="font-size: 14px"><a >Sala Fitness</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -32,15 +30,18 @@
             <div class="gallery-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="{{asset('images/gallery/2.jpg')}}" alt=""/>
-                        <a class="overlay-link" href="{{asset('images/gallery/2.jpg')}}" data-fancybox="images"
+                        <img style="height: 300px; object-fit: cover" src="{{asset('storage/'.$photosSecondo[0])}}" alt=""/>
+                        <a class="overlay-link" href="{{asset('storage/'.$photosSecondo[0])}}" data-fancybox="images2"
                            data-caption=""></a>
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a class="plus" href="{{asset('images/gallery/2.jpg')}}" data-fancybox="images"
-                                       data-caption=""></a>
+                                    @for($i = 1; $i < count($photosSecondo); $i++ )
+                                        <a  href="{{asset('storage/'.$photosSecondo[$i])}}" data-fancybox="images2"
+                                            data-caption=""></a>
+                                    @endfor
+                                    <h4 style="font-size: 14px"><a >Sala Arti Marziali</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -52,15 +53,18 @@
             <div class="gallery-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="{{asset('images/gallery/3.jpg')}}" alt=""/>
-                        <a class="overlay-link" href="images/gallery/gallery3.jpg" data-fancybox="images"
+                        <img style="height: 300px; object-fit: cover" src="{{asset('storage/'.$photosTerzo[0])}}" alt=""/>
+                        <a class="overlay-link" href="{{asset('storage/'.$photosTerzo[0])}}" data-fancybox="images3"
                            data-caption=""></a>
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a class="plus" href="images/gallery/gallery3.jpg" data-fancybox="images"
-                                       data-caption=""></a>
+                                    @for($i = 1; $i < count($photosTerzo); $i++ )
+                                        <a  href="{{asset('storage/'.$photosTerzo[$i])}}" data-fancybox="images3"
+                                            data-caption=""></a>
+                                    @endfor
+                                    <h4 style="font-size: 14px"><a >Esterni</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -72,15 +76,18 @@
             <div class="gallery-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="{{asset('images/gallery/4.jpg')}}" alt=""/>
-                        <a class="overlay-link" href="images/gallery/gallery4.jpg" data-fancybox="images"
+                        <img style="height: 300px; object-fit: cover" src="{{asset('storage/'.$photosQuarto[0])}}" alt=""/>
+                        <a class="overlay-link" href="{{asset('storage/'.$photosQuarto[0])}}" data-fancybox="images4"
                            data-caption=""></a>
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a class="plus" href="images/gallery/gallery4.jpg" data-fancybox="images"
-                                       data-caption=""></a>
+                                    @for($i = 1; $i < count($photosQuarto); $i++ )
+                                        <a  href="{{asset('storage/'.$photosQuarto[$i])}}" data-fancybox="images4"
+                                            data-caption=""></a>
+                                    @endfor
+                                    <h4 style="font-size: 14px"><a >Sala Funzionale</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -92,15 +99,18 @@
             <div class="gallery-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="{{asset('images/gallery/5.jpg')}}" alt=""/>
-                        <a class="overlay-link" href="images/gallery/gallery5.jpg" data-fancybox="images"
+                        <img style="height: 300px; object-fit: cover" src="{{asset('storage/'.$photosQuinto[0])}}" alt=""/>
+                        <a class="overlay-link" href="{{asset('storage/'.$photosQuinto[0])}}" data-fancybox="images5"
                            data-caption=""></a>
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a class="plus" href="images/gallery/gallery5.jpg" data-fancybox="images"
-                                       data-caption=""></a>
+                                    @for($i = 1; $i < count($photosQuinto); $i++ )
+                                        <a  href="{{asset('storage/'.$photosQuinto[$i])}}" data-fancybox="images5"
+                                            data-caption=""></a>
+                                    @endfor
+                                    <h4 style="font-size: 14px"><a >Sala Pesi</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -112,15 +122,18 @@
             <div class="gallery-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="{{asset('images/gallery/6.jpg')}}" alt=""/>
-                        <a class="overlay-link" href="images/gallery/gallery6.jpg" data-fancybox="images"
+                        <img style="height: 300px; object-fit: cover" src="{{asset('storage/'.$photosSesto[0])}}" alt=""/>
+                        <a class="overlay-link" href="{{asset('storage/'.$photosSesto[0])}}" data-fancybox="images6"
                            data-caption=""></a>
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a class="plus" href="images/gallery/gallery6.jpg" data-fancybox="images"
-                                       data-caption=""></a>
+                                    @for($i = 1; $i < count($photosSesto); $i++ )
+                                        <a  href="{{asset('storage/'.$photosSesto[$i])}}" data-fancybox="images6"
+                                            data-caption=""></a>
+                                    @endfor
+                                    <h4 style="font-size: 14px"><a >Piscina</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -132,15 +145,18 @@
             <div class="gallery-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="{{asset('images/gallery/7.jpg')}}" alt=""/>
-                        <a class="overlay-link" href="images/gallery/gallery7.jpg" data-fancybox="images"
+                        <img style="height: 300px; object-fit: cover" src="{{asset('storage/'.$photosSettimo[0])}}" alt=""/>
+                        <a class="overlay-link" href="{{asset('storage/'.$photosSettimo[0])}}" data-fancybox="images7"
                            data-caption=""></a>
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a class="plus" href="images/gallery/gallery7.jpg" data-fancybox="images"
-                                       data-caption=""></a>
+                                    @for($i = 1; $i < count($photosSettimo); $i++ )
+                                        <a  href="{{asset('storage/'.$photosSettimo[$i])}}" data-fancybox="images7"
+                                            data-caption=""></a>
+                                    @endfor
+                                    <h4 style="font-size: 14px"><a >Sala Posturale</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -152,21 +168,25 @@
             <div class="gallery-block">
                 <div class="inner-box">
                     <div class="image">
-                        <img src="{{asset('images/gallery/8.jpg')}}" alt=""/>
-                        <a class="overlay-link" href="images/gallery/gallery8.jpg" data-fancybox="images"
+                        <img style="height: 300px; object-fit: cover" src="{{asset('storage/'.$photosOttavo[0])}}" alt=""/>
+                        <a class="overlay-link" href="{{asset('storage/'.$photosOttavo[0])}}" data-fancybox="images8"
                            data-caption=""></a>
                         <!-- Overlay Box -->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a class="plus" href="images/gallery/gallery8.jpg" data-fancybox="images"
-                                       data-caption=""></a>
+                                    @for($i = 1; $i < count($photosOttavo); $i++ )
+                                        <a  href="{{asset('storage/'.$photosOttavo[$i])}}" data-fancybox="images8"
+                                            data-caption=""></a>
+                                    @endfor
+                                    <h4 style="font-size: 14px"><a >Sala Relax</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+{{--
 
             <!-- Gallery Block -->
             <div class="gallery-block">
@@ -247,6 +267,7 @@
                     </div>
                 </div>
             </div>
+--}}
 
         </div>
     </div>

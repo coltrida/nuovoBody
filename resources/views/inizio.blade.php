@@ -199,14 +199,17 @@
     </section>
     <!-- End We Are Section -->
 
-    @include('partials.gallery')
+    <div class="container">
+        @include('partials.gallery')
+    </div>
+
 
     <!-- Counter Section -->
     <section class="counter-section">
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2><span>Perchè </span>sceglierci</h2>
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
+                <div class="text">E' sempre meglio dare qualche numero....</div>
             </div>
 
             <!-- Fact Counter -->
@@ -359,18 +362,18 @@
                             <img src="{{asset("storage/trainers/$item->id.jpg")}}" alt="" />
                             <!-- Overlay Box -->
                             <div class="overlay-box">
-                                <a href="trainer.html" class="overlay-link"></a>
+                                <a  class="overlay-link"></a>
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <h4><a href="blog-detail.html">{{$item->nome}}</a></h4>
+                                        <h4><a >{{$item->nome}}</a></h4>
                                     </div>
                                 </div>
                             </div>
                             <!-- Overlay Box Two -->
                             <div class="overlay-box-two">
-                                <a href="trainer.html" class="overlay-link-two"></a>
+                                <a  class="overlay-link-two"></a>
                                 <div class="content">
-                                    <h5><a href="blog-detail.html">{{$item->nome}} <br> {{$item->cognome}}</a></h5>
+                                    <h5><a >{{$item->nome}} {{$item->cognome}}</a></h5>
                                     <div class="text" style="font-size: 12px; text-align:justify ">{{$item->descrizione}}</div>
                                     <!-- Social Box -->
                                     {{--<div class="social-box">
@@ -745,7 +748,7 @@
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2><span>ULTIME</span><br>NOTIZIE</h2>
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua</div>
+                <div class="text">Vi teniamo informati delle ultime notizie, nuovi corsi, nuove attività, tutte bellissime notizie!</div>
             </div>
 
             <div class="single-item-carousel owl-carousel owl-theme">
@@ -758,15 +761,15 @@
                         <!-- News Block -->
                         <div class="news-block">
                             <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
+                                <a href="{{route('notizia', $ultimeNotizie[0]->id)}}" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="{{asset('images/resource/news-1.jpg')}}" alt="" />
+                                    <img src="{{asset($ultimeNotizie[0]->path)}}" alt="" />
                                     <div class="post-date">
-                                        <span>27</span>SEP
+                                        <span>{{$ultimeNotizie[0]->created_at->format('d')}}</span>{{$ultimeNotizie[0]->created_at->format('M')}}
                                     </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">HOW TO MAXIMISE TIME SPENT AT THE GYM</a></h4>
-                                    </div>
+                                    {{--<div class="content">
+                                        <h4><a href="{{route('notizia', $ultimeNotizie[0]->id)}}">{{$ultimeNotizie[0]->titolo}}</a></h4>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -779,31 +782,15 @@
                         <!-- News Block -->
                         <div class="news-block">
                             <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
+                                <a href="{{route('notizia', $ultimeNotizie[1]->id)}}" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="{{asset('images/resource/news-2.jpg')}}" alt="" />
+                                    <img src="{{asset($ultimeNotizie[1]->path)}}" alt="" />
                                     <div class="post-date">
-                                        <span>7</span>SEP
+                                        <span>{{$ultimeNotizie[1]->created_at->format('d')}}</span>{{$ultimeNotizie[1]->created_at->format('M')}}
                                     </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">SIMPLE CONDITION FOR ALL AROUND FITNESS</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- News Block -->
-                        <div class="news-block">
-                            <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
-                                <div class="image">
-                                    <img src="{{asset('images/resource/news-3.jpg')}}" alt="" />
-                                    <div class="post-date">
-                                        <span>18</span>SEP
-                                    </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">10 TIPS HOW TO PREPARE MEALS FAST AND EASY</a></h4>
-                                    </div>
+                                    {{--<div class="content">
+                                        <h4><a href="{{route('notizia', $ultimeNotizie[1]->id)}}">{{$ultimeNotizie[1]->titolo}}</a></h4>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -820,15 +807,15 @@
                         <!-- News Block -->
                         <div class="news-block">
                             <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
+                                <a href="{{route('notizia', $ultimeNotizie[2]->id)}}" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="{{asset('images/resource/news-1.jpg')}}" alt="" />
+                                    <img src="{{asset($ultimeNotizie[2]->path)}}" alt="" />
                                     <div class="post-date">
-                                        <span>27</span>SEP
+                                        <span>{{$ultimeNotizie[2]->created_at->format('d')}}</span>{{$ultimeNotizie[2]->created_at->format('M')}}
                                     </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">HOW TO MAXIMISE TIME SPENT AT THE GYM</a></h4>
-                                    </div>
+                                    {{--<div class="content">
+                                        <h4><a href="{{route('notizia', $ultimeNotizie[2]->id)}}">{{$ultimeNotizie[2]->titolo}}</a></h4>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -841,93 +828,15 @@
                         <!-- News Block -->
                         <div class="news-block">
                             <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
+                                <a href="{{route('notizia', $ultimeNotizie[3]->id)}}" class="overlay-link"></a>
                                 <div class="image">
-                                    <img src="{{asset('images/resource/news-2.jpg')}}" alt="" />
+                                    <img src="{{asset($ultimeNotizie[3]->path)}}" alt="" />
                                     <div class="post-date">
-                                        <span>7</span>SEP
+                                        <span>{{$ultimeNotizie[3]->created_at->format('d')}}</span>{{$ultimeNotizie[3]->created_at->format('M')}}
                                     </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">SIMPLE CONDITION FOR ALL AROUND FITNESS</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- News Block -->
-                        <div class="news-block">
-                            <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
-                                <div class="image">
-                                    <img src="{{asset('images/resource/news-3.jpg')}}" alt="" />
-                                    <div class="post-date">
-                                        <span>18</span>SEP
-                                    </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">10 TIPS HOW TO PREPARE MEALS FAST AND EASY</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="row clearfix">
-
-                    <!-- Column -->
-                    <div class="column col-lg-6 col-md-12 col-sm-12">
-
-                        <!-- News Block -->
-                        <div class="news-block">
-                            <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
-                                <div class="image">
-                                    <img src="{{asset('images/resource/news-1.jpg')}}" alt="" />
-                                    <div class="post-date">
-                                        <span>27</span>SEP
-                                    </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">HOW TO MAXIMISE TIME SPENT AT THE GYM</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Column -->
-                    <div class="column col-lg-6 col-md-12 col-sm-12">
-
-                        <!-- News Block -->
-                        <div class="news-block">
-                            <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
-                                <div class="image">
-                                    <img src="{{asset('images/resource/news-2.jpg')}}" alt="" />
-                                    <div class="post-date">
-                                        <span>7</span>SEP
-                                    </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">SIMPLE CONDITION FOR ALL AROUND FITNESS</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- News Block -->
-                        <div class="news-block">
-                            <div class="inner-box">
-                                <a href="blog-detail.html" class="overlay-link"></a>
-                                <div class="image">
-                                    <img src="{{asset('images/resource/news-3.jpg')}}" alt="" />
-                                    <div class="post-date">
-                                        <span>18</span>SEP
-                                    </div>
-                                    <div class="content">
-                                        <h4><a href="blog-detail.html">10 TIPS HOW TO PREPARE MEALS FAST AND EASY</a></h4>
-                                    </div>
+                                    {{--<div class="content">
+                                        <h4><a href="{{route('notizia', $ultimeNotizie[3]->id)}}">{{$ultimeNotizie[3]->titolo}}</a></h4>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -939,7 +848,7 @@
             </div>
 
             <div class="lower-text text-center">
-                <a href="blog-detail-two.html" class="view-all">View all</a>
+                <a href="{{route('notizie')}}" class="view-all">Tutte Le notizie</a>
             </div>
 
         </div>

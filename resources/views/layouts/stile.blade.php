@@ -104,7 +104,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="{{asset('images/logo-small.png')}}" style="height: 60px"
+                    <a href="{{route('inizio')}}" title=""><img src="{{asset('images/logo-small.png')}}" style="height: 60px"
                                                        alt="" title=""></a>
                 </div>
                 <!--Right Col-->
@@ -124,7 +124,7 @@
             <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="{{asset('images/logo-small.png')}}" alt=""
+                <div class="nav-logo"><a href="{{route('inizio')}}"><img src="{{asset('images/logo-small.png')}}" alt=""
                                                                 title=""></a></div>
                 <div class="menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
@@ -173,11 +173,11 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="index.html"><img width="100" src="{{asset('images/logo-small.png')}}" alt=""/></a>
+                                        <a href="{{route('inizio')}}"><img width="100" src="{{asset('images/logo-small.png')}}" alt=""/></a>
                                     </div>
                                     <!-- Footer Mobile Logo -->
                                     <div class="footer-mobile-logo">
-                                        <a href="index.html"><img src="{{asset('images/logo.svg')}}" alt=""
+                                        <a href="{{route('inizio')}}"><img src="{{asset('images/logo.svg')}}" alt=""
                                                                   title=""></a>
                                     </div>
                                     <ul class="info-list">
@@ -210,19 +210,21 @@
                             <!--Footer Column-->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget news-widget">
-                                    <h6>BLOG POSTS</h6>
+                                    <h6>In Evidenza</h6>
                                     <div class="widget-content">
 
-                                        <div class="post">
-                                            <div class="thumb"><a href="blog-detail.html"><img
-                                                        src="{{asset('images/resource/post-thumb-1.jpg')}}" alt=""></a>
+                                        @foreach($inEvidenza as $ele)
+                                            <div class="post">
+                                                <div class="thumb"><a href="{{route('notizia', $ele->id)}}"><img
+                                                            src="{{asset($ele->path)}}" alt=""></a>
+                                                </div>
+                                                <h5><a href="{{route('notizia', $ele->id)}}">{{$ele->titolo}}</a>
+                                                </h5>
+                                                <span class="date">{{$ele->created_at->format('d M Y')}}</span>
                                             </div>
-                                            <h5><a href="blog-detail.html">HOW TO MAXIMISE TIME SPENT AT THE GYM</a>
-                                            </h5>
-                                            <span class="date">JUNE 21, 2020</span>
-                                        </div>
+                                        @endforeach
 
-                                        <div class="post">
+                                       {{-- <div class="post">
                                             <div class="thumb"><a href="blog-detail.html"><img
                                                         src="{{asset('images/resource/post-thumb-2.jpg')}}" alt=""></a>
                                             </div>
@@ -238,7 +240,7 @@
                                             <h5><a href="blog-detail.html">SIMPLE CONDITION FOR ALL AROUND FITNESS</a>
                                             </h5>
                                             <span class="date">JUNE 21, 2020</span>
-                                        </div>
+                                        </div>--}}
 
                                     </div>
                                 </div>

@@ -33,7 +33,9 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::post('calendar/', [AuthController::class, 'calendarAdd'])->name('admin.calendar.add');
 
     /*----------- foto -------------*/
-    Route::get('/photos', [AuthController::class, 'photos'])->name('admin.photos');
+    Route::get('/photos/main', [AuthController::class, 'photosMain'])->name('admin.photos.main');
+    Route::get('/photos/second', [AuthController::class, 'photosSecond'])->name('admin.photos.second');
+    Route::get('/photos/activities/{numero}', [AuthController::class, 'photosActivities'])->name('admin.photos.activities');
     Route::post('photos/', [AuthController::class, 'photoAdd'])->name('admin.photo.add');
 
     /*----------- post -------------*/
@@ -41,6 +43,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('posts/{id}', [AuthController::class, 'postShow'])->name('admin.post.show');
     Route::get('posts/elimina/{id}', [AuthController::class, 'postDelete'])->name('admin.post.delete');
     Route::post('posts/', [AuthController::class, 'postAdd'])->name('admin.post.add');
+    Route::get('posts/evidenza/{id}', [AuthController::class, 'postEvidenza'])->name('admin.post.evidenza');
 });
 
 
