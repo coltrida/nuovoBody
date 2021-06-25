@@ -48,9 +48,9 @@
 
                     <!-- Header Social Box -->
                     <div class="header-social-box clearfix">
-                        <a href="https://www.facebook.com/bodylinecortona/" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
+                        <a target="_blank" href="https://www.facebook.com/bodylinecortona/" class="fa fa-facebook"></a>
+                        <a target="_blank" href="https://www.instagram.com/palestrabodyline/?r=nametag" class="fa fa-instagram"></a>
+                        {{--<a href="#" class="fa fa-linkedin"></a>--}}
                     </div>
 
                     <div class="outer-box clearfix">
@@ -260,7 +260,7 @@
                                     <div class="widget-content">
 
                                         <ul class="info-list">
-                                            <li style="font-size: 14px; color: white">
+                                            <li style="font-size: 18px; color: white">
                                                 @foreach($orario as $giorno)
                                                     <div class="row">
                                                         <div class="col-2">{{$giorno->giornosettimanabreve}}</div>
@@ -275,9 +275,9 @@
                                             </li>
 
                                             <li class="social-links mt-3 text-white" ><span>I nostri Social:</span><br>
-                                                <a href="#" class="fa fa-facebook text-white"></a>
-                                                <a href="#" class="fa fa-instagram text-white"></a>
-                                                <a href="#" class="fa fa-linkedin text-white"></a>
+                                                <a target="_blank" href="https://www.facebook.com/bodylinecortona/" class="fa fa-facebook text-white"></a>
+                                                <a target="_blank" href="https://www.instagram.com/palestrabodyline/?r=nametag"  class="fa fa-instagram text-white"></a>
+                                                {{--<a href="#" class="fa fa-linkedin text-white"></a>--}}
                                             </li>
 
                                             <li class="social-links mt-3 text-white">

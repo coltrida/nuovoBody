@@ -18,7 +18,7 @@
                                     <a  href="{{asset('storage/'.$photosPrimo[$i])}}" data-fancybox="images1"
                                        data-caption=""></a>
                                     @endfor
-                                    <h4 style="font-size: 14px"><a >Sala Fitness</a></h4>
+                                    <h4 style="text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; font-size: 20px"><a >Sala Fitness</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                                         <a  href="{{asset('storage/'.$photosSecondo[$i])}}" data-fancybox="images2"
                                             data-caption=""></a>
                                     @endfor
-                                    <h4 style="font-size: 14px"><a >Sala Arti Marziali</a></h4>
+                                    <h4 style="text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; font-size: 20px"><a >Sala Arti Marziali</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                                         <a  href="{{asset('storage/'.$photosTerzo[$i])}}" data-fancybox="images3"
                                             data-caption=""></a>
                                     @endfor
-                                    <h4 style="font-size: 14px"><a >Esterni</a></h4>
+                                    <h4 style="text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; font-size: 20px"><a >Esterni</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                                         <a  href="{{asset('storage/'.$photosQuarto[$i])}}" data-fancybox="images4"
                                             data-caption=""></a>
                                     @endfor
-                                    <h4 style="font-size: 14px"><a >Sala Funzionale</a></h4>
+                                    <h4 style="text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; font-size: 20px"><a >Sala Funzionale</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
                                         <a  href="{{asset('storage/'.$photosQuinto[$i])}}" data-fancybox="images5"
                                             data-caption=""></a>
                                     @endfor
-                                    <h4 style="font-size: 14px"><a >Sala Pesi</a></h4>
+                                    <h4 style="text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; font-size: 20px"><a >Sala Pesi</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                         <a  href="{{asset('storage/'.$photosSesto[$i])}}" data-fancybox="images6"
                                             data-caption=""></a>
                                     @endfor
-                                    <h4 style="font-size: 14px"><a >Piscina</a></h4>
+                                    <h4 style="text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; font-size: 20px"><a >Piscina</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                                         <a  href="{{asset('storage/'.$photosSettimo[$i])}}" data-fancybox="images7"
                                             data-caption=""></a>
                                     @endfor
-                                    <h4 style="font-size: 14px"><a >Sala Posturale</a></h4>
+                                    <h4 style="text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; font-size: 20px"><a >Sala Posturale</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
                                         <a  href="{{asset('storage/'.$photosOttavo[$i])}}" data-fancybox="images8"
                                             data-caption=""></a>
                                     @endfor
-                                    <h4 style="font-size: 14px"><a >Sala Relax</a></h4>
+                                    <h4 style="text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; font-size: 20px"><a >Sala Relax</a></h4>
                                 </div>
                             </div>
                         </div>

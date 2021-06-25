@@ -35,9 +35,18 @@ class FrontController extends Controller
         return view('calendario', compact('courses'));
     }
 
-    public function about()
+    public function about(PhotoService $photoService)
     {
-        return view('about');
+        $photosPrimo = $photoService->activities(1);
+        $photosSecondo = $photoService->activities(2);
+        $photosTerzo = $photoService->activities(3);
+        $photosQuarto = $photoService->activities(4);
+        $photosQuinto = $photoService->activities(5);
+        $photosSesto = $photoService->activities(6);
+        $photosSettimo = $photoService->activities(7);
+        $photosOttavo= $photoService->activities(8);
+        return view('about', compact('photosPrimo', 'photosSecondo', 'photosTerzo', 'photosQuarto', 'photosQuinto',
+            'photosSesto', 'photosSettimo', 'photosOttavo'));
     }
 
     public function notizie(PostService $postService)

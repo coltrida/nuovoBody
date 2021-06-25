@@ -6,13 +6,13 @@
         <li><a href="commingsoon.html">In Arrivo</a></li>
     </ul>--}}
 </li>
-<li class="dropdown"><a href="#">Personal Trainers</a>
+{{--<li class="dropdown"><a href="#">Personal Trainers</a>
     <ul>
         @foreach($trainers as $trainer)
             <li><a href="trainer.html">{{$trainer->nome}} {{$trainer->cognome}}</a></li>
         @endforeach
     </ul>
-</li>
+</li>--}}
 <li><a href="{{route('calendario')}}">Calendario</a>
     {{--<ul>
         <li><a href="shop-left.html">Shop Left Sidebar</a></li>
@@ -31,7 +31,7 @@
         <li><a href="not-found.html">Not Found</a></li>
     </ul>--}}
 </li>
-<li><a href="contact.html">Contattaci</a></li>
+<li><a href="#infondo">Contattaci</a></li>
 @guest
     <li><a href="{{ route('login') }}">Login</a></li>
 @else

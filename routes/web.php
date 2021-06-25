@@ -5,6 +5,8 @@ use App\Http\Controllers\FrontController;
 
 
 Route::get('/', [FrontController::class, 'index'])->name('inizio');
+Route::get('/listino', function (){ return redirect()->route('inizio'); });
+Route::get('/storia', function (){ return redirect()->route('inizio'); });
 Route::get('/calendario', [FrontController::class, 'calendario'])->name('calendario');
 Route::get('/about', [FrontController::class, 'about'])->name('about');
 Route::get('/notizie', [FrontController::class, 'notizie'])->name('notizie');

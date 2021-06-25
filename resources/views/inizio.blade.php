@@ -157,9 +157,9 @@
                             <!-- Overlay Box -->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
-                                    <div class="content">
-                                        <h4><a href="#">CARDIO</a></h4>
-                                    </div>
+                                    {{--<div class="content">
+                                        <h4><a href="#">BJJ</a></h4>
+                                    </div>--}}
                                 </div>
                             </div>
 
@@ -368,15 +368,16 @@
                 </div>
 
             </div>
-{{--
+
             <div class="row clearfix">
 
                 <!-- Pricing Block -->
-                <div class="price-block col col-sm-12 py-0">
-                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="price-block col p-1">
+                    <div class="inner-box wow fadeInLeft p-1" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <ul class="price-list">
-                            <li style="font-size: 14px; text-align: justify">
+                            <li style="font-size: 12px; text-align: justify">
                                 35 euro mensili da corrispondere alla palestra per l'uso dei locali e 20 euro per ogni seduta con il personal. Ingresso vincolato ai soli appuntamenti personal
+                                @for($i=1; $i<10; $i++) &nbsp; @endfor
                             </li>
                         </ul>
                         <div class="price"><span>Solo con Personal</span></div>
@@ -384,47 +385,55 @@
                 </div>
 
                 <!-- Pricing Block -->
-                <div class="price-block col col-sm-12 py-0">
-                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="price-block col p-1">
+                    <div class="inner-box wow fadeInLeft p-1" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <ul class="price-list">
-                            <li> € 45 MENSILI X 12</li>
+                            <li style="font-size: 12px; text-align: justify">
+                                115 euro mensili che comprendono accessi illimitati al centro fitness anche in assenza del personal e 3 sedute private con il trainer scelto
+                                @for($i=1; $i<30; $i++) &nbsp; @endfor
+                            </li>
                         </ul>
-                        <div class="price">$ 540<span>Ogni 12 Mesi</span></div>
+                        <div class="price"><span>3 Sedute Personal</span></div>
                     </div>
                 </div>
 
                 <!-- Pricing Block -->
-                <div class="price-block col col-sm-12 py-0">
-                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="price-block col p-1">
+                    <div class="inner-box wow fadeInLeft p-1" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <ul class="price-list">
-                            <li>INGRESSO SINGOLO</li>
+                            <li style="font-size: 12px; text-align: justify">
+                                195 euro mensili che comprendono accessi illimitati al centro fitness anche in assenza del personal, corsi di gruppo, accessi gratuiti sauna e 8 sedute private con il trainer scelto.
+                            </li>
                         </ul>
-                        <div class="price">$ 10<span>&nbsp;</span></div>
+                        <div class="price"><span>Servizio Tutto Incluso</span></div>
                     </div>
                 </div>
 
                 <!-- Pricing Block -->
-                <div class="price-block col col-sm-12 py-0">
-                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="price-block col p-1">
+                    <div class="inner-box wow fadeInLeft p-1" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <ul class="price-list">
-                            <li>INGRESSO SINGOLO</li>
+                            <li style="font-size: 12px; text-align: justify">
+                                160 euro mensili a persona, che comprendono accessi illimitati al centro fitness anche in assenza del personal, corsi di gruppo, accessi gratuiti sauna e 8 sedute private con il trainer scelto.
+                            </li>
                         </ul>
-                        <div class="price">$ 10<span>&nbsp;</span></div>
+                        <div class="price"><span>Personal in Coppia</span></div>
                     </div>
                 </div>
 
                 <!-- Pricing Block -->
-                <div class="price-block col col-sm-12 py-0">
-                    <div class="inner-box wow fadeInLeft py-0" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="price-block col p-1">
+                    <div class="inner-box wow fadeInLeft p-1" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <ul class="price-list">
-                            <li>INGRESSO SINGOLO</li>
+                            <li style="font-size: 12px; text-align: justify">
+                                135 euro mensili a persona, che comprendono accessi illimitati al centro fitness anche in assenza del personal, corsi di gruppo, accessi gratuiti sauna e 8 sedute private con il trainer scelto.
+                            </li>
                         </ul>
-                        <div class="price">$ 10<span>&nbsp;</span></div>
+                        <div class="price"><span>Minigruppo 3 persone</span></div>
                     </div>
                 </div>
 
             </div>
-            --}}
         </div>
     </section>
     <!-- End Pricing Section -->

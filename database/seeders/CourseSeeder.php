@@ -154,6 +154,90 @@ class CourseSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+            [
+                'nome' => 'ACQUA DANCE',
+                'descrizione' => 'Su Prenotazione',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'BODY CROSS',
+                'descrizione' => 'Su Prenotazione',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'ACQUA BOND',
+                'descrizione' => 'Su Prenotazione',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'ASS & ABS',
+                'descrizione' => 'Gambe, Glutei e Addome',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'ACQUA HIIT',
+                'descrizione' => 'Su Prenotazione',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'BODY BALANCE',
+                'descrizione' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'NTC HIIT',
+                'descrizione' => 'Focus Resistenza',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'NTC STRENGTH',
+                'descrizione' => 'Focus Forza',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'BRAZILIAN JIU-JITSU',
+                'descrizione' => 'Su Prenotazione',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'BODY TONE',
+                'descrizione' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'ACQUA GYM',
+                'descrizione' => 'Giuly',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'ACQUA GYM',
+                'descrizione' => 'Nadia',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'WORKOUT & YOGA',
+                'descrizione' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nome' => 'BJJ OPEN TATAMI',
+                'descrizione' => 'Su Prenotazione',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }

@@ -20,7 +20,7 @@ class CourseService
 
     public function listaCorsiConCalendario()
     {
-        return Course::with('calendars')->orderBy('nome')->get();
+        return Course::with('calendars')->whereHas('calendars')->orderBy('nome')->get();
     }
 
     public function elimina($id)
