@@ -139,7 +139,7 @@
                             <div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <h4><a href="#">CROSSFIT</a></h4>
+                                        <h4><a href="#">BODY CROSS</a></h4>
                                     </div>
                                 </div>
                             </div>

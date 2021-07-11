@@ -65,7 +65,8 @@ class PostService
         if ($request->hasFile('foto')){
             $file = $request->file('foto');
             $filename = $post->id . '.' . $file->extension();
-            $file->storeAs('public/notizie/', $filename);
+            //$file->storeAs('public/notizie/', $filename);
+            Storage::disk('public')->putFileAs('/notizie', $file, $filename);
             $post->foto = $filename;
             $post->save();
         }

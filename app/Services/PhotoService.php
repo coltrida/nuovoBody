@@ -57,7 +57,9 @@ class PhotoService
         if ($request->hasFile('foto')){
             $file = $request->file('foto');
             $filename = $request->posizione;
-            $file->storeAs('public/', $filename);
+            //$file->storeAs('public/', $filename);
+            Storage::disk('public')->putFileAs('/', $file, $filename);
+            //  $file->storeAs('public/trainers/', $filename);
         }
     }
 }

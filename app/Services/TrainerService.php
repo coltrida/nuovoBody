@@ -34,7 +34,8 @@ class TrainerService
         if ($request->hasFile('foto')){
             $file = $request->file('foto');
             $filename = $trainer->id . '.' . $file->extension();
-            $file->storeAs('public/trainers/', $filename);
+            Storage::disk('public')->putFileAs('/trainers', $file, $filename);
+          //  $file->storeAs('public/trainers/', $filename);
             $trainer->foto = $filename;
             $trainer->save();
         }

@@ -54,30 +54,5 @@
                             </div>
                         </div>
                     </div>
-{{--
-                    <h2 class="h3 mb-2 text-gray-800">Secondo Main</h2>
-                    <div class="card shadow mb-4" style="width: 100%">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" style="width: 100%">
-                                    <thead>
-                                    <tr>
-                                        <th>Nome foto</th>
-                                        <th>foto</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    @foreach($secondMain as $item)
-                                        <tr>
-                                            <td style="vertical-align: middle">{{$item}}</td>
-                                            <td><img width="300" src="{{asset('storage/'.$item)}}" alt=""></td>
-                                        </tr>
-                                    @endforeach
-                                    </tbody>
-
-                                </table>
-                            </div>
-                        </div>
-                    </div>--}}
 
 @endsection

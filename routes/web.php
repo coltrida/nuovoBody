@@ -12,6 +12,10 @@ Route::get('/about', [FrontController::class, 'about'])->name('about');
 Route::get('/notizie', [FrontController::class, 'notizie'])->name('notizie');
 Route::get('/notizie/{id}', [FrontController::class, 'notizia'])->name('notizia');
 
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
+
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/', [AuthController::class, 'index'])->name('admin.index');
 

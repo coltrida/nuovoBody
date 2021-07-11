@@ -17,9 +17,9 @@ class CalendarService
 
     public function elimina($id)
     {
-        $id2 = $id++;
+        /*$id2 = $id++;*/
         Calendar::destroy($id);
-        Calendar::destroy($id2);
+        /*Calendar::destroy($id2);*/
     }
 
     public function aggiungi($request)
@@ -31,7 +31,7 @@ class CalendarService
         $primo->orario = $request->orario;
         $primo->save();
 
-        $minuti = Carbon::parse($request->orario)->minute;
+/*        $minuti = Carbon::parse($request->orario)->minute;
         $ora = Carbon::parse($request->orario)->hour;
 
         if ($minuti == 0){
@@ -46,6 +46,6 @@ class CalendarService
         $secondo->mezza = 1;
         $secondo->course_id = $request->course_id;
         $secondo->orario = $ora.':'.$minuti.':00';
-        $secondo->save();
+        $secondo->save();*/
     }
 }

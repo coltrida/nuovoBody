@@ -24,14 +24,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '1',
-                'orario' => '10:30',
-                'course_id' => 8,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '1',
                 'orario' => '13:30',
@@ -40,14 +33,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '1',
-                'orario' => '14:00',
-                'course_id' => 24,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '1',
                 'orario' => '13:30',
@@ -56,14 +42,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '1',
-                'orario' => '14:00',
-                'course_id' => 25,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '1',
                 'orario' => '17:00',
@@ -72,14 +51,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '1',
-                'orario' => '17:30',
-                'course_id' => 26,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '1',
                 'orario' => '18:30',
@@ -88,14 +60,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '1',
-                'orario' => '19:00',
-                'course_id' => 27,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '1',
                 'orario' => '19:30',
@@ -104,14 +69,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '1',
-                'orario' => '20:00',
-                'course_id' => 25,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '2',
                 'orario' => '13:30',
@@ -120,14 +78,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '2',
-                'orario' => '14:00',
-                'course_id' => 28,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '2',
                 'orario' => '18:30',
@@ -136,14 +87,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '2',
-                'orario' => '19:00',
-                'course_id' => 29,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '2',
                 'orario' => '19:30',
@@ -152,14 +96,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '2',
-                'orario' => '20:00',
-                'course_id' => 30,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '2',
                 'orario' => '19:30',
@@ -168,14 +105,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '2',
-                'orario' => '20:00',
-                'course_id' => 32,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '3',
                 'orario' => '10:00',
@@ -184,14 +114,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '3',
-                'orario' => '10:30',
-                'course_id' => 8,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '3',
                 'orario' => '13:30',
@@ -200,14 +123,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '3',
-                'orario' => '14:00',
-                'course_id' => 33,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '3',
                 'orario' => '17:00',
@@ -216,14 +132,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '3',
-                'orario' => '17:30',
-                'course_id' => 26,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '3',
                 'orario' => '18:30',
@@ -232,14 +141,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '3',
-                'orario' => '19:00',
-                'course_id' => 22,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '3',
                 'orario' => '19:30',
@@ -248,14 +150,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '3',
-                'orario' => '20:00',
-                'course_id' => 25,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '4',
                 'orario' => '13:30',
@@ -264,14 +159,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '4',
-                'orario' => '14:00',
-                'course_id' => 34,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '4',
                 'orario' => '18:30',
@@ -280,14 +168,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '4',
-                'orario' => '19:00',
-                'course_id' => 36,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '4',
                 'orario' => '19:30',
@@ -296,14 +177,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '4',
-                'orario' => '20:00',
-                'course_id' => 31,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '4',
                 'orario' => '19:30',
@@ -312,14 +186,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '4',
-                'orario' => '20:00',
-                'course_id' => 32,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '5',
                 'orario' => '10:00',
@@ -328,14 +195,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '5',
-                'orario' => '10:30',
-                'course_id' => 8,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '5',
                 'orario' => '13:30',
@@ -344,14 +204,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '5',
-                'orario' => '14:00',
-                'course_id' => 31,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '6',
                 'orario' => '11:00',
@@ -360,14 +213,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '6',
-                'orario' => '11:30',
-                'course_id' => 35,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
             [
                 'giorno' => '6',
                 'orario' => '11:00',
@@ -376,14 +222,7 @@ class CalendarSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            [
-                'giorno' => '6',
-                'orario' => '11:30',
-                'course_id' => 37,
-                'mezza' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+
         ]);
     }
 }
